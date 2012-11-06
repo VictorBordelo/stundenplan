@@ -1,0 +1,44 @@
+/* Contains only velocity generated styles */
+#foreach( $teacher in [0..1] )
+    #foreach( $group in [0..1] )
+        #foreach( $room in [0..1] )
+	             #set( $sum = $teacher + $room + $group )
+	             #if( $sum != 0 )
+	             #set( $number = ((($room * 2) + $group) * 2)  + $teacher )
+	             #set( $counter = 0 )
+	             #set( $images = "background-image: " )
+	             #set( $positions = "background-position: " )
+	             .ui-state-cell-blocked-$number {
+	              #if($teacher == 1)
+	                #set( $images = $images + "url('user_red.png')" )
+	                #set( $positions = $positions + "top left" )
+	                #set( $counter = $counter + 1 )
+	              #end
+	              #if($group == 1)
+	                #if( $counter > 0 )
+	                  #set( $comma = ", ")
+	                #else
+	                  #set( $comma = "")  
+	                #end
+	                #set( $images = $images + $comma + "url('group.png')")
+	                #set( $positions = $positions + $comma + "center left" )
+	                #set( $counter = $counter + 1 )
+	              #end
+                  #if($room == 1)
+                    #if( $counter > 0 )
+                      #set( $comma = ", ")
+                    #else
+                      #set( $comma = "")  
+                    #end
+                    #set( $images = $images + $comma + "url('house.png')")
+                    #set( $positions = $positions + $comma + "bottom left" )
+                    #set( $counter = $counter + 1 )
+                  #end
+                  $images;
+	              $positions;
+	              background-repeat: no-repeat;
+	            }
+             #end
+       #end
+    #end
+#end

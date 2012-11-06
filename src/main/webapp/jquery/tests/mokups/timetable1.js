@@ -1,0 +1,1 @@
+[{"id":230,"content":"R0.058","tag":1,"title":"Softwareentwicklung II","zeit":3},{"id":236,"content":"R1.010a","tag":2,"title":"Softwareentwicklung II","zeit":5},{"id":237,"content":"R2.010","tag":3,"title":"Softwareentwicklung II","zeit":3}]

@@ -1,0 +1,280 @@
+body {
+padding: 0;
+margin: 0;
+font: normal 12px/1 Arial, Helvetica, sans-serif;
+background: #FFE45C url(ui-lightness/images/ui-bg_highlight-soft_75_ffe45c_1x100.png) repeat-x scroll;
+color: #000;
+min-width: 700px;
+}
+
+h1,h2,h3,h4,h5,h6,p {
+margin-top:0;
+padding-right:15px;
+padding-left:15px;
+}
+
+a img {
+border:none;
+}
+
+a:link {
+color:#414958;
+text-decoration:underline;
+}
+
+a:visited {
+color:#4E5869;
+text-decoration:underline;
+}
+
+a:hover,a:active,a:focus {
+text-decoration:none;
+}
+
+p.small {
+font-size:10px;
+}
+
+#wrapper {
+margin-top:15px;
+padding-left:20px;
+}
+
+#header {
+color:#1C94C4;
+text-align:center;
+padding:5px 0 15px;
+}
+
+#left-panel {
+float:left;
+position:relative;
+height:100%;
+min-height:600px;
+}
+
+.view-listing {
+margin-top:10px;
+display:block;
+width:280px;
+}
+
+.view-listing.ui-tabs .ui-tabs-panel {
+padding:.6em .4em;
+}
+
+div.horizontal-list {
+overflow:hidden;
+padding:10px 10px 10px 20px !important;
+}
+
+.scroll-pane-hor {
+overflow:auto;
+width:99%;
+float:left;
+}
+
+#scroll-content-hor {
+width:1952px;
+min-height:120px;
+float:left;
+}
+
+.scroll-content-item {
+width:100px;
+height:100px;
+float:left;
+line-height:1em;
+text-align:center;
+border-radius:25px;
+border:2px solid;
+box-shadow:2px 2px 2px #888;
+margin:10px;
+}
+
+.scroll-content-item p {
+padding-top:10px;
+padding-left:4px;
+padding-right:4px;
+}
+
+* html .scroll-content-item {
+display:inline;
+}
+
+.scroll-content-item .class-name {
+font-size:.9em;
+font-weight:700;
+}
+
+.scroll-content-item p.prof-name {
+font-size:.8em;
+font-weight:400;
+}
+
+.scroll-bar-wrap-hor {
+clear:left;
+margin:0 -1px -1px;
+padding:0 4px 0 2px;
+}
+
+.scroll-bar-wrap-hor .ui-slider-handle {
+top:.2em;
+height:1.1em;
+}
+
+.scroll-bar-wrap-vert {
+height:550px;
+clear:none;
+float:right;
+margin:0 -1px -1px;
+padding:0 4px 0 2px;
+}
+
+.scroll-bar-wrap-vert .ui-slider-handle {
+top:auto;
+height:1.1em;
+}
+
+.scroll-pane-tab {
+height:550px;
+overflow:hidden;
+width:265px;
+}
+
+.scroll-pane-tab.ui-widget-header {
+background:#F6A828;
+}
+
+.scroll-content-tab {
+float:left;
+width:120px;
+}
+
+.scroll-pane-tab .scroll-content-item {
+width:225px;
+height:30px;
+margin:6px 10px;
+}
+
+.scroll-pane-tab .scroll-content-item p {
+padding-top:8px;
+}
+
+.scroll-bar-tab {
+float:right;
+height:100%;
+position:relative;
+}
+
+#time-table-container {
+overflow:hidden;
+padding:10px 10px 30px 20px !important;
+}
+
+.time-table {
+border-collapse:collapse;
+width:99%;
+color:#fff;
+border-radius:10px;
+border:2px solid;
+box-shadow:2px 2px 2px #888;
+}
+
+.time-table td,.time-table th {
+border-collapse:collapse;
+border:#e78f08 solid 1px;
+vertical-align:top;
+overflow:hidden;
+}
+
+.time-table th {
+background:#f6ae37;
+padding:.4em;
+}
+
+.rotate {
+	-moz-transform: rotate(-90deg);
+}
+
+.time-table td {
+min-width:100px;
+width:18%;
+}
+
+.time-table tr th:first-child {
+width:90px;
+}
+
+.time-table-cell {
+height:80px;
+background:#EEE;
+}
+
+.ui-state-cell-active {
+background:#d7d7d7;
+}
+
+/* use http://www.stripegenerator.com ?? */
+.ui-state-cell-blocked-teacher {
+background-image: url('user_red.png');
+background-position: top left;
+background-image: url('group.png');
+background-position: center left;
+background-repeat: no-repeat;
+}
+
+.ui-state-cell-blocked-group {
+background-image: url('group.png');
+background-position: center left;
+ground-image: url('house.png');
+background-position: bottom left;
+background-repeat: no-repeat;
+}
+
+.ui-state-cell-blocked-room {
+ground-image: url('house.png');
+background-position: bottom left;
+background-image: url('group.png');
+background-position: center left;
+background-repeat: no-repeat;
+}
+
+.table-content-item {
+width:100%;
+text-align:center;
+border-radius:10px;
+border:2px solid;
+box-shadow:2px 2px 2px #888;
+margin:4px;
+}
+
+.table-content-item p {
+padding-top:6px;
+padding-left:4px;
+padding-right:4px;
+}
+
+.scroll-content-item:hover,.table-content-item:hover {
+background:#FC0;
+}
+
+.scroll-bar-wrap-hor .ui-slider,.scroll-bar-wrap-vert .ui-slider {
+background:none;
+border:0;
+height:1.5em;
+margin:0 auto;
+}
+
+.scroll-bar-wrap-hor .ui-handle-helper-parent,.scroll-bar-wrap-vert .ui-handle-helper-parent {
+position:relative;
+width:100%;
+height:100%;
+margin:0 auto;
+}
+
+.scroll-bar-wrap-hor .ui-slider-handle .ui-icon,.scroll-bar-wrap-vert .ui-slider-handle .ui-icon {
+position:relative;
+top:50%;
+margin:-8px auto 0;
+}

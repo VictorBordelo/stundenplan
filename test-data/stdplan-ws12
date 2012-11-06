@@ -1,0 +1,338 @@
+	GO1 GO1 IF1A IF1A	Fischer,Rainer	Analysis	Analysis	IF-I-B-101	SU	Montag	11:45	90	R0.058	
+	GO1 GO1 IF1A IF1A	Fischer,Rainer	Analysis	Analysis	IF-I-B-101	SU	Mittwoch	13:30	90	R0.058	
+	GO1 GO1 IF1A IF1A	Fischer,Rainer	Analysis (Tutorium)	Analysis	IF-I-B-101	SU	Montag	13:30	90	R0.058	R3.021
+	IF1B IF1B	Fischer,Rainer	Analysis	Analysis	IF-I-B-101	SU	Montag	8:15	90	R1.008	
+	IF1B IF1B	Fischer,Rainer	Analysis	Analysis	IF-I-B-101	Ü	Donnerstag	13:30	90	R1.006	
+	IF1B IF1B	Fischer,Rainer	Analysis (Tutorium)	Analysis	IF-I-B-101	Ü	Mittwoch	11:45	90	R0.005	
+	IF1A IF1A	Orehek	IT-Systeme I	IT-Systeme I	IF-I-B-102	SU	Mittwoch	10:00	90	R2.007	
+	IC1 IC1 IF1C IF1C	Ruckert	IT-Systeme I	IT-Systeme I	IF-I-B-102	SU	Montag	15:15	90	R0.058	
+	IF1A IF1A	Orehek	IT-Systeme I (Praktikum, 1. Teilgruppe)	IT-Systeme I	IF-I-B-102	Pr	Donnerstag	17:00	90		R2.008
+	IF1A	Orehek	IT-Systeme I (Praktikum, 2. Teilgruppe)	IT-Systeme I	IF-I-B-102	Pr	Donnerstag	13:30	90		R2.008
+	IC1 IF1C	Ruckert	IT-Systeme I (Praktikum, 1. Teilgruppe)	IT-Systeme I	IF-I-B-102	Pr	Dienstag	15:15	90		R3.019
+	IC1 IC1 IF1C IF1C	Ruckert	IT-Systeme I (Praktikum, 2. Teilgruppe)	IT-Systeme I	IF-I-B-102	Pr	Dienstag	13:30	90		R3.021
+	IF3A	Kirch	Algorithmen und Datenstrukturen I (Praktikum, 2. Teilgruppe)	Algorithmen und Datenstrukturen I	IF-I-B-301	Pr	Mittwoch	10:00	90	R0.007	R1.009
+IG IF		Barker	Embedded Software Development (Advanced Embedded Software Projekt für IG)	Embedded Software Development	IF-I-B-F50	PS	Mittwoch	8:15	90		R3.024
+	GO1 GO1 IF1A IF1A	Ruckert	Lineare Algebra	Lineare Algebra	IF-I-B-103	Ü	Montag	17:00	90	R2.007	
+	IF1B IF1B	Gruber	Lineare Algebra	Lineare Algebra	IF-I-B-103	SU	Dienstag	13:30	90	R1.008	
+	IF1B	Gruber	Lineare Algebra	Lineare Algebra	IF-I-B-103	Ü	Dienstag	15:15	90	R1.008	
+IG IF IC		Nischwitz	Entwicklung eines Computerspiels (Games Engineering für IG)	Entwicklung eines Computerspiels	IF-I-B-F35	PS	Donnerstag	15:15	90		R3.019
+	GO1 GO1 IF1A IF1A	Schiedermeier	Softwareentwicklung I	Softwareentwicklung I	IF-I-B-104	SU	Montag	10:00	90	R0.058	
+	GO1 GO1 IF1A IF1A	Schiedermeier	Softwareentwicklung I	Softwareentwicklung I	IF-I-B-104	SU	Montag	8:15	90	R0.058	
+	IF1B IF1B	Hof	Softwareentwicklung I	Softwareentwicklung I	IF-I-B-104	SU	Dienstag	10:00	90	R0.058	
+	IF1B IF1B	Hof	Softwareentwicklung I	Softwareentwicklung I	IF-I-B-104	SU	Mittwoch	10:00	90	R0.006	
+	IF1B	Hof	Softwareentwicklung I (Praktikum, 2. Teilgruppe)	Softwareentwicklung I	IF-I-B-104	Pr	Dienstag	15:15	90		R2.012
+	IF1B	Hammerschall	Softwareentwicklung I (Praktikum, 3. Teilgruppe)	Softwareentwicklung I	IF-I-B-104	Pr	Freitag	10:00	90		R3.021
+	GO1 IF1A	Schiedermeier	Softwareentwicklung I (Praktikum, 1. Teilgruppe)	Softwareentwicklung I	IF-I-B-104	Pr	Donnerstag	10:00	90		R3.021
+	GO1 IF1A	Schiedermeier	Softwareentwicklung I (Praktikum, 2. Teilgruppe)	Softwareentwicklung I	IF-I-B-104	Pr	Donnerstag	11:45	90		R3.021
+	IF1A IF1A	Orehek	Technische Informatik I	Technische Informatik I	IF-I-B-105	SU	Mittwoch	8:15	90	R1.006	
+	IN1 IN3	Hertle	Entrepreneurship & Service Development	Entrepreneurship & Service Development	IF-WI-M-13-15-1	SU	Dienstag	15:15	90	R2.007	
+	IF1A IF1A	Orehek	Technische Informatik I (Praktikum, 14 tägig)	Technische Informatik I	IF-I-B-105	Pr	Dienstag	15:15	90		R1.012
+	IF1A IF1A	Orehek	Technische Informatik I (Praktikum, 14 tägig)	Technische Informatik I	IF-I-B-105	Pr	Dienstag	13:30	90		R1.012
+	IC1 IC1 IF1C IF1C	Vogt	Technische Informatik I (Praktikum, 14 tägig)	Technische Informatik I	IF-I-B-105	Pr	Freitag	10:00	90		R1.012
+	IN1 IN3	Hertle	Entrepreneurship & Service Development	Entrepreneurship & Service Development	IF-WI-M-13-15-1	SU	Dienstag	13:30	90	R0.010	
+	IG	Hammerschall	Hauptseminar (Software Engineering	Hauptseminar	IF-I-M004	S	Mittwoch	8:15	90	R0.010	
+IF IB		Hof	Sicherheit von Web-Anwendungen	Sicherheit von Web-Anwendungen	IF-WI-B-30-34-27	FWP	Donnerstag	13:30	90	R0.009	
+	GO3 GO3 IF3A IF3A	Wischhof	Netzwerke I	Netzwerke I	IF-I-B-304	SU	Dienstag	10:00	90	R1.006	
+	GO3 IF3A	Wischhof	Netzwerke I (Praktikum, 1. Teilgruppe)	Netzwerke I	IF-I-B-304	Pr	Montag	13:30	90		R1.012
+	IF3A IF3A	Staudt	Datenbanksysteme I	Datenbanksysteme I	IF-I-B-302	SU	Dienstag	11:45	90	R1.007	
+	IF3B IF3B	Staudt	Datenbanksysteme I	Datenbanksysteme I	IF-I-B-302	SU	Dienstag	10:00	90	R2.007	
+	GO3 GO3 IC3 IC3	Fischer,Max	Algorithmen und Datenstrukturen I	Algorithmen und Datenstrukturen I	IF-I-B-301	SU	Montag	11:45	90	R1.006	
+	IF3A IF3A	Kirch	Algorithmen und Datenstrukturen I	Algorithmen und Datenstrukturen I	IF-I-B-301	SU	Montag	10:00	90	R1.006	
+	IF3A IF3A IF3B IF3B	Wischhof	Rechnerarchitektur	Rechnerarchitektur	IF-I-B-305	SU	Montag	17:00	90	R0.058	
+	IF3B	Socher	Software Engineering I (Praktikum, 2. Teilgruppe)	Software Engineering I	IF-I-B-306	Pr	Donnerstag	10:00	90		R1.009
+	IC3 IC3 IF4 IF4	Köster	Integraltransformationen	Integraltransformationen	IF-I-B-303	SU	Dienstag	10:00	90	R0.006	
+IC	IF6	Nischwitz	Computergrafik und Bildverarbeitung (Praktikum, 2. Teilgruppe)	Computergrafik und Bildverarbeitung	IF-I-B-601	Pr	Dienstag	17:00	90		R3.019
+IS	IN1 IN1	Fischer,Dirk	Investition und Finanzierung	Investition und Finanzierung	IF-WI-M06	SU	Mittwoch	10:00	90	R1.007	R3.020
+IS	IN1 IN1	Fischer,Dirk	Investition und Finanzierung	Investition und Finanzierung	IF-WI-M06	SU	Mittwoch	8:15	90	R1.007	R3.020
+IF IB		Hof	Sicherheit von Web-Anwendungen	Sicherheit von Web-Anwendungen	IF-WI-B-30-34-27	FWP	Donnerstag	15:15	90		R1.012
+	IG IG IG	Köhler	Wissensbasierte Systeme	Wissensbasierte Systeme	IF-I-M201	SU	Dienstag	18:45	90	R1.007	
+	GO3 IF3A	Wischhof	Netzwerke I (Praktikum, 2. Teilgruppe)	Netzwerke I	IF-I-B-304	Pr	Dienstag	17:00	90		R1.012
+	IB3A IB3A	Schwenkert	Datenbanksysteme 	Datenbanksysteme 	IF-WI-B12	SU	Donnerstag	17:00	90	R1.008	
+	IF3B IF3B	Wischhof	Netzwerke I	Netzwerke I	IF-I-B-304	SU	Mittwoch	13:30	90	R0.005	
+	IB3A	Schwenkert	Datenbanksysteme (Praktikum, 1. Teilgruppe)	Datenbanksysteme 	IF-WI-B12	Pr	Donnerstag	10:00	90		R2.009
+	IF3A	Staudt	Datenbanksysteme I (Praktikum, 1. Teilgruppe)	Datenbanksysteme I	IF-I-B-302	Pr	Donnerstag	13:30	90		R2.012
+	IF3A	Staudt	Datenbanksysteme I (Praktikum, 2. Teilgruppe)	Datenbanksysteme I	IF-I-B-302	Pr	Mittwoch	13:30	90		R2.008
+	IF3B	Staudt	Datenbanksysteme I (Praktikum, 1. Teilgruppe)	Datenbanksysteme I	IF-I-B-302	Pr	Mittwoch	10:00	90		R2.010
+	IF3B	Staudt	Datenbanksysteme I (Praktikum, 2. Teilgruppe)	Datenbanksysteme I	IF-I-B-302	Pr	Mittwoch	11:45	90		R2.008
+IG IF IC		Nischwitz	Entwicklung eines Computerspiels (Games Engineering für IG)	Entwicklung eines Computerspiels	IF-I-B-F35	PS	Donnerstag	17:00	90		R3.019
+	GO3 GO3 IC3 IC3	Fischer,Max	Algorithmen und Datenstrukturen I (Praktikum)	Algorithmen und Datenstrukturen I	IF-I-B-301	Pr	Montag	15:15	90		R2.008
+IF IB IC		Schlotzhauer	Internet- und Medienrecht	Internet- und Medienrecht	IF-I-B-F45	FWP	Montag	15:15	90	R1.007	
+	IF3B	Wischhof	Netzwerke I (Praktikum, 2. Teilgruppe)	Netzwerke I	IF-I-B-304	Pr	Montag	10:00	90		R1.012
+	IC3 IC3 IF4 IF4	Köster	Integraltransformationen (Übung)	Integraltransformationen	IF-I-B-303	Ü	Dienstag	17:00	90	R0.005	
+	IF3A	Kirch	Algorithmen und Datenstrukturen I (Praktikum, 1. Teilgruppe)	Algorithmen und Datenstrukturen I	IF-I-B-301	Pr	Montag	11:45	90	R0.006	R2.008
+	IC3 IC3 IF3A IF3B IF4	Eich-Soellner	Differentialrechnung in Rn und Differentialgleichungen	Differentialrechnung in Rn und Differentialgleichungen	IF-I-B-M01	SU	Dienstag	13:30	90	R0.012	
+	IC3 IF3A IF3B IF4	Eich-Soellner	Differentialrechnung in Rn und Differentialgleichungen (Tutorium)	Differentialrechnung in Rn und Differentialgleichungen	IF-I-B-M01	SU	Donnerstag	13:30	90	R0.012	
+IB		Recknagel	Ausgewählte Kapitel der Angewandten Mathematik I	Ausgewählte Kapitel der Angewandten Mathematik I	IF-WI-B-30-34-18	FWP	Dienstag	13:30	90	R0.058	
+	IB3A	Schwenkert	Datenbanksysteme (Praktikum, 2. Teilgruppe)	Datenbanksysteme 	IF-WI-B12	Pr	Freitag	11:45	90		R2.009
+	IC7 IF3A	Socher	Software Engineering I (Praktikum, 14-tägig)	Software Engineering I	IF-I-B-306	Pr	Freitag	11:45	90		R3.021
+	IB3A IB3C	Schwenkert	Datenbanksysteme (Praktikum, 3. Teilgruppe)	Datenbanksysteme 	IF-WI-B12	Pr	Mittwoch	10:00	90		R2.009
+	IF4 IF4	Vogt	Betriebssysteme I	Betriebssysteme I	IF-I-B-401	SU	Montag	10:00	90	R1.008	
+	IF4 IF4	Vogt	Betriebssysteme I (Praktikum, 1. Teilgruppe)	Betriebssysteme I	IF-I-B-401	Pr	Mittwoch	11:45	90	R2.007	R2.014
+	IB1A	Lindermeier	Wirtschaftsinformatik  (3. Teilgruppe; bei Bedarf)	Wirtschaftsinformatik	IF-WI-B04	SU	Donnerstag	13:30	90	R1.007	
+	IF4 IF4	Gerling Schuster	Datenschutz und IT- Sicherheit I	Datenschutz und IT-Sicherheit I	IF-I-B-402	SU	Freitag	14:00	90	R1.008	
+	IF4 IF4	Schiedermeier	Software-Architektur	Software-Architektur	IF-I-B-403	SU	Mittwoch	10:00	90	R0.005	
+	IF4	Schiedermeier	Software-Architektur (Praktikum, 1. Teilgruppe)	Software-Architektur	IF-I-B-403	Pr	Montag	11:45	90		R3.021
+	IC3 IC3 IF4 IF4	Zielke	Wahrscheinlichkeitstheorie und Statistik	Wahrscheinlichkeitstheorie und Statistik	IF-I-B-404	SU	Donnerstag	11:45	90	R0.010	
+	IC3 IF4	Zielke	Wahrscheinlichkeitstheorie und Statistik (Übung, 1. Teilgruppe)	Wahrscheinlichkeitstheorie und Statistik	IF-I-B-404	Ü	Freitag	8:15	90	R0.012	
+	IG IG	Fischer,Max	Embedded- und Echtzeitbetriebssysteme	Embedded- und Echtzeitbetriebssysteme	IG-EC-01	SU	Donnerstag	10:00	90	R2.007	
+	IG	Hammerschall	Requirements Engineering	Requirements Engineering	IF-I-B-F39	SU	Donnerstag	13:30	90	R0.007	
+	IB3B IB3B	Böck	Informationssysteme I	Informationssysteme I	IF-WI-B26	SU	Mittwoch	15:15	90	R1.007	
+	IB3B	Böck	Informationssysteme I (Praktikum, 1. Teilgruppe)	Informationssysteme I	IF-WI-B26	Pr	Mittwoch	17:00	90		R2.008
+IF IC		Balazs	Technical Writing in Computer Science	Technical Writing in Computer Science	IF-I-B-F28	FWP	Dienstag	13:30	90	R0.009	
+	IF6	Pleier	Verteilte Softwaresysteme	Verteilte Softwaresysteme	IF-I-B-603	SU	Donnerstag	13:30	90	R0.006	
+IC	IF6	Nischwitz	Computergrafik und Bildverarbeitung	Computergrafik und Bildverarbeitung	IF-I-B-601	SU	Dienstag	13:30	90	R1.006	
+IC	IF6	Nischwitz	Computergrafik und Bildverarbeitung (Praktikum, 1. Teilgruppe)	Computergrafik und Bildverarbeitung	IF-I-B-601	Pr	Dienstag	18:45	90		R3.019
+	IF6	Pleier	Verteilte Softwaresysteme (Praktikum)	Verteilte Softwaresysteme	IF-I-B-603	Pr	Donnerstag	8:15	90		R3.026
+	IF7 IF7	Möncke	Compiler	Compiler	IF-I-B-701	SU	Freitag	8:15	90	R1.008	
+	IF7	Möncke	Compiler (Praktikum, 1. Teilgruppe)	Compiler	IF-I-B-701	Pr	Mittwoch	11:45	90		R3.021
+	IF7	Möncke	Compiler (Praktikum, 2. Teilgruppe)	Compiler	IF-I-B-701	Pr	Freitag	11:45	90		R1.009
+	IF1B IF1B	Anlauff	IT-Systeme I	IT-Systeme I	IF-I-B-102	SU	Montag	15:15	90	R1.006	
+	IF3B	Wischhof	Netzwerke I (Praktikum, 1. Teilgruppe)	Netzwerke I	IF-I-B-304	Pr	Mittwoch	8:15	90		R1.012
+	IB3C	Mandl	Datenkommunikation (Praktikum, 3. Teilgruppe; bei Bedarf)	Datenkommunikation	IF-WI-B13	Pr	Mittwoch	10:00	90		R1.010A
+IS IG IN3 IN1 IF IC		Wass	Projektwerkstatt (Bei Tara Systems;  für genauen Termin Aushang beachten!)	Projektwerkstatt	IF-I-B-F06	FWP	Dienstag	18:45	90		
+	IF4	Schiedermeier	Software-Architektur (Praktikum, 2. Teilgruppe)	Software-Architektur	IF-I-B-403	Pr	Mittwoch	8:15	90		R3.021
+	IB5C	Bosch	Unternehmensplanspiel (2. Teilgruppe, 14-tägig)	Praxisbegleitende Lehrveranstaltung	IF-WI-B29a	Pr	Mittwoch	10:00	90		R2.016
+	IC3 IC3 IF3A IF3B IF4	Eich-Soellner	Operations Research	Operations Research	IF-I-B-M03	SU	Montag	13:30	90	R0.012	
+	IC3 IC3 IF3A IF3B IF4	Eich-Soellner	Operations Research	Operations Research	IF-I-B-M03	Ü	Donnerstag	17:00	90	R0.012	
+	IG	Fischer,Max	3D-Szenengenerierung	3D-Szenengenerierung	IF-I-M102	SU	Donnerstag	13:30	90	R2.007	
+IF IC	GO7	Fischer,Max	Grundlagen der Robotik	Grundlagen der Robotik	IF-I-B-F30	FWP	Dienstag	15:15	90	R0.058	
+	GO1 GO1 IF1A IF1A	Ruckert	Lineare Algebra	Lineare Algebra	IF-I-B-103	SU	Donnerstag	8:15	90	R1.006	
+	IG	Fischer,Max	3D-Szenengenerierung	3D-Szenengenerierung	IF-I-M102	Pr	Donnerstag	11:45	90		R3.024
+IB		Recknagel	Ausgewählte Kapitel der Angewandten Mathematik I	Ausgewählte Kapitel der Angewandten Mathematik I	IF-WI-B-30-34-18	FWP	Dienstag	15:15	90	R1.006	
+	IF4	Vogt	Betriebssysteme I (Praktikum, 2. Teilgruppe)	Betriebssysteme I	IF-I-B-401	Pr	Freitag	8:15	90		R2.014
+	IG IG	Pleier	Sichere Systeme	Sichere Systeme	IF-I-M202	PS	Mittwoch	13:30	90		R3.026
+	IG IG IG	Pleier	Sichere Systeme	Sichere Systeme	IF-I-M202	PS	Mittwoch	11:45	90		R3.026
+	IC3 IF4	Zielke	Wahrscheinlichkeitstheorie und Statistik (Übung, 2. Teilgruppe)	Wahrscheinlichkeitstheorie und Statistik	IF-I-B-404	Ü	Freitag	11:45	90	R2.007	
+	IF4 IF4	Gerling Schuster	Datenschutz und IT- Sicherheit I	Datenschutz und IT-Sicherheit I	IF-I-B-402	SU	Freitag	15:45	90	R1.008	
+	IC1 IC1 IF1C IF1C	Vogt	Technische Informatik I	Technische Informatik I	IF-I-B-105	SU	Mittwoch	10:00	90	R1.008	
+	IF1A	Schiedermeier	Softwareentwicklung I (Praktikum, 3. Teilgruppe)	Softwareentwicklung I	IF-I-B-104	Pr	Mittwoch	11:45	90		R2.010
+IS	IG	Nischwitz	Computergrafik	Computergrafik	IF-I-M001	SU	Mittwoch	8:15	90	R1.008	
+IS	IG	Nischwitz	Computergrafik (Praktikum)	Computergrafik	IF-I-M001	Pr	Mittwoch	10:00	90		R3.019
+IS	IG	Schnörr	Digitale Bildverarbeitung	Digitale Bildverarbeitung	IF-I-M002	SU	Dienstag	17:00	90	R0.010	
+IS	IG	Schnörr	Digitale Bildverarbeitung (Praktikum, 1. Teilgruppe)	Digitale Bildverarbeitung	IF-I-M002	Pr	Dienstag	18:45	90		R3.026
+IS	IG	Schnörr	Mustererkennung	Mustererkennung	IF-I-M003	SU	Mittwoch	13:30	90	R0.010	
+IS	IG	Schnörr	Mustererkennung (Praktikum)	Mustererkennung	IF-I-M003	Pr	Mittwoch	15:15	90		R3.026
+	IC7 IF3A	Socher	Software Engineering I (Praktikum, 14-tägig)	Software Engineering I	IF-I-B-306	Pr	Freitag	13:30	90		R3.021
+	GO7 IF3B	Socher	Software Engineering I (Praktikum, 1. Teilgruppe und GO7)	Software Engineering I	IF-I-B-306	Pr	Donnerstag	13:30	90		R3.021
+	IB1B	Braun	Softwareentwicklung I (Praktikum, 2. Teilgruppe)	Softwareentwicklung I	IF-WI-B05	Pr	Freitag	10:00	90		R1.010A
+	IG	Fischer,Max	Embedded- und Echtzeitbetriebssysteme	Embedded- und Echtzeitbetriebssysteme	IG-EC-01	Pr	Donnerstag	15:15	90		R3.024
+	IG	Krzystek	Photogrammetrische Bildverarbeitung	Photogrammetrische Bildverarbeitung	IF-I-M505	SU	Dienstag	15:15	90	R0.010	
+	IG	Krzystek	Photogrammetrische Bildverarbeitung (Praktikum)	Photogrammetrische Bildverarbeitung	IF-I-M505	Pr	Dienstag	13:30	90		R3.026
+IF IC		Hirschinger	Prozesse und Methoden beim Testen von Software	Prozesse und Methoden beim Testen von Software	IF-I-B-F07	FWP	Mittwoch	8:15	90	R0.007	
+IF IC		Anlauff Hirschinger	Prozesse und Methoden beim Testen von Software	Prozesse und Methoden beim Testen von Software	IF-I-B-F07	FWP	Mittwoch	10:00	90		R2.008
+IF IC		Anlauff	Anwendungsentwicklung mit Chipkarten	Anwendungsentwicklung mit Chipkarten	IF-I-B-F21	FWP	Dienstag	13:30	90	R0.007	R2.008
+IF IC		Anlauff	Anwendungsentwicklung mit Chipkarten	Anwendungsentwicklung mit Chipkarten	IF-I-B-F21	FWP	Dienstag	15:15	90		R2.008
+IF IC	GO7	Fischer,Max	Grundlagen der Robotik	Grundlagen der Robotik	IF-I-B-F30	FWP	Dienstag	17:00	90		R3.026
+	IG	Hertel	Raytracing	Raytracing	IF-I-M506	SU	Mittwoch	17:00	90	R1.008	
+	IG IS1	Gruber	Markov-Prozesse und Warteschlangensysteme	Markov-Prozesse und Warteschlangensysteme	IF-S-M-102	SU	Donnerstag	13:30	90	R0.010	
+	IG IS1	Gruber	Markov-Prozesse und Warteschlangensysteme	Markov-Prozesse und Warteschlangensysteme	IF-S-M-102	Ü	Donnerstag	17:00	90	R0.009	
+	IG IS1	Hörwick	Maß- und Wahrscheinlichkeitstheorie	Maß- und Wahrscheinlichkeitstheorie	IF-S-M-103	SU	Donnerstag	15:15	90	R0.010	
+	IG IS1	Hörwick	Maß- und Wahrscheinlichkeitstheorie	Maß- und Wahrscheinlichkeitstheorie	IF-S-M-103	Ü	Donnerstag	10:00	90	R1.008	
+	IG	Abmayr	Datenfusion und 3D Modellierung	Datenfusion und 3D Modellierung	IF-I-M103	SU	Dienstag	10:00	90	R0.009	
+	IG	Abmayr	Datenfusion und 3D Modellierung	Datenfusion und 3D Modellierung	IF-I-M103	Pr	Dienstag	11:45	90		R3.026
+	IC7 IF7		Bachelorseminar (Die Dozierenden der Informatik; Termine nach Absprache)	Bachelorseminar	IF-I-B-702	S	Dienstag	17:00	90	R0.009	
+	IF6 IF7 IF7	Pleier	Datenschutz und IT-Sicherheit II (Anteil IT-Sicherheit)	Datenschutz und IT-Sicherheit II	IF-I-B-V04	SU	Mittwoch	8:15	90	R0.005	
+	IN1 IN1	Möbert	Informationssysteme	Informationssysteme	IF-WI-M01	SU	Mittwoch	15:15	90	R0.012	
+	IN1	Möbert	Informationssysteme (Übung, 1. Teilgruppe)	Informationssysteme	IF-WI-M01	Ü	Mittwoch	11:45	90		R2.012
+	IN1	Möbert	Informationssysteme (Übung, 2. Teilgruppe)	Informationssysteme	IF-WI-M01	Ü	Donnerstag	13:30	90		R2.014
+IS	IG	Schnörr	Digitale Bildverarbeitung (Praktikum, 2. Teilgruppe)	Digitale Bildverarbeitung	IF-I-M002	Pr	Dienstag	15:15	90		R3.026
+	IF3B IF3B	Kirch	Algorithmen und Datenstrukturen I	Algorithmen und Datenstrukturen I	IF-I-B-301	SU	Montag	8:15	90	R1.006	
+IS	IN1 IN1	Fischer,Dirk	Controlling	Controlling	IF-WI-M05	SU	Freitag	11:45	90	R0.010	R3.020
+IS	IN1 IN1	Fischer,Dirk	Controlling	Controlling	IF-WI-M05	SU	Freitag	10:00	90	R0.011	R3.020
+	IF3B	Kirch	Algorithmen und Datenstrukturen I (Praktikum, 3. Teilgruppe)	Algorithmen und Datenstrukturen I	IF-I-B-301	Pr	Donnerstag	10:00	90	R1.006	R2.008
+IB		Bresolin Lackermair	Web 2.0: Konzepte, Anwendungen und Technologien	Web 2.0: Konzepte, Anwendungen und Technologien	IF-WI-B-30-34-20	FWP	Dienstag	17:00	90	R0.006	
+IS	IG IN1 IN1	Hertle	Datenanalyse	Datenanalyse	IF-WI-M09	SU	Donnerstag	11:45	90	R1.008	
+IS	IG IN1	Hertle	Datenanalyse (Übung, 1. Teilgruppe)	Datenanalyse	IF-WI-M09	Ü	Donnerstag	15:15	90		R2.010
+	IN3 IN3	Fischer,Dirk	Projektstudium	Projektstudium	IF-WI-M12	PS	Donnerstag	15:15	90	R2.018	R3.020
+	IN3 IN3	Fischer,Dirk	Projektstudium	Projektstudium	IF-WI-M12	PS	Donnerstag	17:00	90	R2.018	R3.020
+	IN3 IN3	Fischer,Dirk	Projektstudium	Projektstudium	IF-WI-M12	PS	Donnerstag	11:45	90	R2.018	R3.020
+	IN3 IN3	Fischer,Dirk	Projektstudium	Projektstudium	IF-WI-M12	PS	Donnerstag	13:30	90	R2.018	R3.020
+	IG	Hertel	Raytracing	Raytracing	IF-I-M506	Pr	Mittwoch	18:45	90		R3.019
+	IB5C	Bosch	Unternehmensplanspiel (2. Teilgruppe, 14-tägig)	Praxisbegleitende Lehrveranstaltung	IF-WI-B29a	Pr	Mittwoch	11:45	90		R2.016
+IB		Bresolin Lackermair	Web 2.0: Konzepte, Anwendungen und Technologien	Web 2.0: Konzepte, Anwendungen und Technologien	IF-WI-B-30-34-20	FWP	Dienstag	18:45	90		R3.021
+	IC3 IC3 IF3A IF3A IF3B IF3B IF4 IF4	Fischer,Rainer	Numerische Mathematik	Numerische Mathematik	IF-I-B-M02	SU	Dienstag	8:15	90	R1.008	
+IF IB IC		Böttcher	Web-Techniken	Web-Techniken	IF-I-B-F11	FWP	Dienstag	15:15	90	R0.006	R1.009
+	IG IG	Möncke	Modellbasierte Softwareentwicklung	Modellbasierte Softwareentwicklung	IG-EC-03	SU	Donnerstag	8:15	90	R0.006	R1.009
+	IB1A IB1A	Zielke	Wirtschaftsmathematik I	Wirtschaftsmathematik I	IF-WI-B01	SU	Mittwoch	10:00	90	R0.058	
+	IB1A	Zielke	Wirtschaftsmathematik I (1. Teilgruppe)	Wirtschaftsmathematik I	IF-WI-B01	Ü	Mittwoch	11:45	90	R1.007	
+	IB1A	Zielke	Wirtschaftsmathematik I (2. Teilgruppe)	Wirtschaftsmathematik I	IF-WI-B01	Ü	Freitag	10:00	90	R0.012	
+	IB1B IB1B	Recknagel	Wirtschaftsmathematik I	Wirtschaftsmathematik I	IF-WI-B01	SU	Freitag	8:15	90	R2.007	
+	IB1B	Recknagel	Wirtschaftsmathematik I (1. Teilgruppe)	Wirtschaftsmathematik I	IF-WI-B01	Ü	Freitag	10:00	90	R0.006	
+	IB1B	Recknagel	Wirtschaftsmathematik I (2. Teilgruppe)	Wirtschaftsmathematik I	IF-WI-B01	Ü	Freitag	11:45	90	R1.008	
+	IB1C IB1C	Schwenkert	Wirtschaftsmathematik	Wirtschaftsmathematik I	IF-WI-B01	SU	Mittwoch	17:00	90	R1.006	
+	IB1C	Schwenkert	Wirtschaftsmathematik I (1. Teilgruppe)	Wirtschaftsmathematik I	IF-WI-B01	Ü	Freitag	10:00	90	R1.006	
+	IB1C	Schwenkert	Wirtschaftsmathematik I (2. Teilgruppe)	Wirtschaftsmathematik I	IF-WI-B01	Ü	Donnerstag	15:15	90	R0.009	
+	IB3A	Möbert	Informationssysteme I (Praktikum, 2. Teilgruppe)	Informationssysteme I	IF-WI-B26	Pr	Mittwoch	8:15	90		R2.012
+	IB1A IB1A	Schmidt,Kerstin	Wirtschaftsinformatik	Wirtschaftsinformatik	IF-WI-B04	SU	Donnerstag	8:15	90	R0.058	
+	IB1A	Schmidt,Kerstin	Wirtschaftsinformatik (1. Teilgruppe)	Wirtschaftsinformatik	IF-WI-B04	SU	Donnerstag	17:00	90	R1.007	
+	IB1A	Schmidt,Kerstin	Wirtschaftsinformatik  (2. Teilgruppe)	Wirtschaftsinformatik	IF-WI-B04	SU	Donnerstag	15:15	90	R1.007	
+	IB1B IB1B	Lindermeier	Wirtschaftsinformatik	Wirtschaftsinformatik	IF-WI-B04	SU	Mittwoch	10:00	90	R0.011	
+	IB1B	Lindermeier	Wirtschaftsinformatik (1. Teilgruppe)	Wirtschaftsinformatik	IF-WI-B04	SU	Donnerstag	11:45	90	R1.006	
+	IB1B	Lindermeier	Wirtschaftsinformatik  (2. Teilgruppe)	Wirtschaftsinformatik	IF-WI-B04	SU	Mittwoch	13:30	90	R1.006	
+	IB1C IB1C	Lindermeier	Wirtschaftsinformatik	Wirtschaftsinformatik	IF-WI-B04	SU	Mittwoch	15:15	90	R1.006	
+	IB1C	Lindermeier	Wirtschaftsinformatik (Übung; 1. Teilgruppe)	Wirtschaftsinformatik	IF-WI-B04	SU	Donnerstag	10:00	90	R0.012	
+	IB1C	Lindermeier	Wirtschaftsinformatik  (Übung; 2. Teilgruppe)	Wirtschaftsinformatik	IF-WI-B04	SU	Mittwoch	11:45	90	R0.012	
+	IB1A IB1A	Zimmer	Softwareentwicklung I	Softwareentwicklung I	IF-WI-B05	SU	Freitag	11:45	90	R0.058	
+	IB1A	Zimmer	Softwareentwicklung I (Praktikum, 1. Teilgruppe)	Softwareentwicklung I	IF-WI-B05	Pr	Donnerstag	13:30	90		R1.009
+	IB1A	Zimmer	Softwareentwicklung I (Praktikum, 2. Teilgruppe)	Softwareentwicklung I	IF-WI-B05	Pr	Donnerstag	11:45	90		R1.009
+	IB1A	Zielke	Wirtschaftsmathematik I (3. Teilgruppe; bei Bedarf)	Wirtschaftsmathematik I	IF-WI-B01	Ü	Mittwoch	8:15	90	R0.006	
+	IB1B IB1B	Braun	Softwareentwicklung I	Softwareentwicklung I	IF-WI-B05	SU	Mittwoch	11:45	90	R0.058	
+	IB1B	Braun	Softwareentwicklung I (Praktikum, 1. Teilgruppe)	Softwareentwicklung I	IF-WI-B05	Pr	Mittwoch	15:15	90		R1.010A
+IB		Killisperger Stückl	Entwicklung großer Softwaresysteme	Entwicklung großer Softwaresysteme	IF-WI-B-30-34-26	FWP	Freitag	15:15	90	R0.006	
+	IF3B IF3B	Wischhof	Rechnerarchitektur (Übung, 2. Teilgruppe)	Rechnerarchitektur	IF-I-B-305	Ü	Dienstag	11:45	90	R2.007	R1.009
+	IB1C IB1C	Braun	Softwareentwicklung I	Softwareentwicklung I	IF-WI-B05	SU	Freitag	8:15	90	R0.058	
+	IB1C	Braun	Softwareentwicklung I (Praktikum, 1. Teilgruppe)	Softwareentwicklung I	IF-WI-B05	Pr	Donnerstag	15:15	90		R1.010A
+	IB1C	Braun	Softwareentwicklung I (Praktikum, 2. Teilgruppe)	Softwareentwicklung I	IF-WI-B05	Pr	Mittwoch	13:30	90		R1.010A
+	IC3 IF3A IF3B IF4	Fischer,Rainer	Numerische Mathematik (Praktikum, 1. Teilgruppe)	Numerische Mathematik	IF-I-B-M02	Pr	Mittwoch	15:15	90	R0.005	
+	IF1B IF1B	Vogt	Technische Informatik I (Praktikum, 14 tägig)	Technische Informatik I	IF-I-B-105	Pr	Donnerstag	10:00	90		R1.012
+	IC1 IC1 IF1C IF1C	Vogt	Technische Informatik I (Praktikum, 14 tägig)	Technische Informatik I	IF-I-B-105	Pr	Freitag	11:45	90		R1.012
+	IF1B IF1B	Vogt	Technische Informatik I (Praktikum, 14 tägig)	Technische Informatik I	IF-I-B-105	Pr	Donnerstag	11:45	90		R1.012
+	IB3B IB3B	Milijas	Datenbanksysteme 	Datenbanksysteme 	IF-WI-B12	SU	Freitag	15:15	90	R2.007	
+	IB3B	Milijas	Datenbanksysteme (Praktikum, 1. Teilgruppe)	Datenbanksysteme 	IF-WI-B12	Pr	Freitag	17:00	90		R2.009
+	IB3B	Milijas	Datenbanksysteme (Praktikum, 2. Teilgruppe)	Datenbanksysteme 	IF-WI-B12	Pr	Freitag	18:45	90		R2.009
+	IF6 IF7 IF7	Beier	Datenschutz und IT-Sicherheit II (Anteil Datenschutz; Aushang beachten)	Datenschutz und IT-Sicherheit II	IF-I-B-V04	SU	Freitag	15:15	90	R0.009	
+	IB3C IB3C	Schwenkert	Datenbanksysteme 	Datenbanksysteme 	IF-WI-B12	SU	Freitag	13:30	90	R2.007	
+	IB3C	Schwenkert	Datenbanksysteme (Praktikum, 1. Teilgruppe)	Datenbanksysteme 	IF-WI-B12	Pr	Mittwoch	13:30	90		R2.009
+	IB3C	Schwenkert	Datenbanksysteme (Praktikum, 2. Teilgruppe)	Datenbanksysteme 	IF-WI-B12	Pr	Mittwoch	11:45	90		R2.009
+	IB3A IB3A IB3C IB3C	Bakomenko Weiß	Datenkommunikation	Datenkommunikation	IF-WI-B13	SU	Mittwoch	15:15	90	R0.058	
+	IB3A	Weiß	Datenkommunikation (Praktikum, 1. Teilgruppe)	Datenkommunikation	IF-WI-B13	Pr	Mittwoch	17:00	90		R1.010A
+	IB3A	Weiß	Datenkommunikation (Praktikum, 2. Teilgruppe)	Datenkommunikation	IF-WI-B13	Pr	Mittwoch	18:45	90		R1.010A
+	IB3B IB3B	Mandl	Datenkommunikation	Datenkommunikation	IF-WI-B13	SU	Donnerstag	17:00	90	R1.006	
+	IB3B	Mandl	Datenkommunikation (Praktikum, 1. Teilgruppe)	Datenkommunikation	IF-WI-B13	Pr	Donnerstag	8:15	90		R1.010A
+	IB3B	Mandl	Datenkommunikation (Praktikum, 2. Teilgruppe)	Datenkommunikation	IF-WI-B13	Pr	Donnerstag	10:00	90		R1.010A
+IF IB IC		Soceanu	Netzwerkmanagement	Netzwerkmanagement	IF-I-B-F05	FWP	Mittwoch	10:00	90	R0.009	
+	IB3C	Bakomenko	Datenkommunikation (Praktikum, 1. Teilgruppe)	Datenkommunikation	IF-WI-B13	Pr	Mittwoch	17:00	90		R2.012
+	IB3C	Bakomenko	Datenkommunikation (Praktikum, 2. Teilgruppe)	Datenkommunikation	IF-WI-B13	Pr	Mittwoch	18:45	90		R2.012
+	IB3A IB3A	Hafner	Softwareengineering I	Softwareengineering I	IF-WI-B14	SU	Mittwoch	13:30	90	R1.007	
+	IB3A	Hafner	Softwareengineering I (Praktikum, 1. Teilgruppe)	Softwareengineering I	IF-WI-B14	Pr	Freitag	11:45	90		R2.012
+	IB3A	Hafner	Softwareengineering I (Praktikum, 2. Teilgruppe)	Softwareengineering I	IF-WI-B14	Pr	Donnerstag	10:00	90		R2.010
+	IB3B IB3B	Hafner	Softwareengineering I	Softwareengineering I	IF-WI-B14	SU	Mittwoch	10:00	90	R1.006	
+	IB3B	Hafner	Softwareengineering I (Praktikum, 1. Teilgruppe)	Softwareengineering I	IF-WI-B14	Pr	Donnerstag	11:45	90		R2.012
+	IB3B	Hafner	Softwareengineering I (Praktikum, 2. Teilgruppe)	Softwareengineering I	IF-WI-B14	Pr	Freitag	13:30	90		R1.010A
+	IF1B	Hof	Softwareentwicklung I (Praktikum, 1. Teilgruppe)	Softwareentwicklung I	IF-I-B-104	Pr	Dienstag	11:45	90		R2.008
+	IB3C IB3C	Thurner	Softwareengineering I	Softwareengineering I	IF-WI-B14	SU	Mittwoch	8:15	90	R0.058	
+	IB3C	Thurner	Softwareengineering I (Praktikum, 1. Teilgruppe)	Softwareengineering I	IF-WI-B14	Pr	Freitag	11:45	90		R1.010A
+	IB3C	Thurner	Softwareengineering I (Praktikum, 2. Teilgruppe)	Softwareengineering I	IF-WI-B14	Pr	Freitag	10:00	90		R2.012
+	IB3B IB3B	Möncke	Datenschutz	Datenschutz	IF-WI-B23	SU	Freitag	10:00	90	R1.008	
+	IB3B IB3B	Möncke	Datenschutz	Datenschutz	IF-WI-B23	SU	Mittwoch	8:15	90	R0.011	
+	IB3A IB3A IB3C IB3C	Möncke	Datenschutz	Datenschutz	IF-WI-B23	SU	Donnerstag	13:30	90	R0.058	
+	IB3A IB3A IB3C IB3C	Möncke	Datenschutz	Datenschutz	IF-WI-B23	SU	Donnerstag	15:15	90	R0.058	
+	IB3A IB3A	Möbert	Informationssysteme I	Informationssysteme I	IF-WI-B26	SU	Donnerstag	11:45	90	R0.012	
+	IB3A	Möbert	Informationssysteme I (Praktikum, 1. Teilgruppe)	Informationssysteme I	IF-WI-B26	Pr	Mittwoch	10:00	90		R2.014
+	IB3B	Böck	Informationssysteme I (Praktikum, 2. Teilgruppe)	Informationssysteme I	IF-WI-B26	Pr	Mittwoch	18:45	90		R2.008
+IF IC		Balazs	Technical Writing in Computer Science	Technical Writing in Computer Science	IF-I-B-F28	FWP	Dienstag	15:15	90	R0.009	
+IB		Killisperger Stückl	Entwicklung großer Softwaresysteme	Entwicklung großer Softwaresysteme	IF-WI-B-30-34-26	FWP	Freitag	17:00	90		R1.010A
+IF IB IC		Böttcher	Web-Techniken	Web-Techniken	IF-I-B-F11	FWP	Dienstag	13:30	90	R0.006	R1.009
+	IC7 IF7		Bachelorseminar (Die Dozierenden der Informatik; Termine nach Absprache)	Bachelorseminar	IF-I-B-702	S	Donnerstag	18:45	90	R0.010	
+	IG IG IG	Köhler	Wissensbasierte Systeme	Wissensbasierte Systeme	IF-I-M201	Pr	Dienstag	17:00	90	R1.007	R2.010
+	IG IG	Möncke	Modellbasierte Softwareentwicklung	Modellbasierte Softwareentwicklung	IG-EC-03	Pr	Donnerstag	11:45	90	R2.007	
+	IB5A	Stützle	Unternehmensplanspiel (1. Teilgruppe)	Praxisbegleitende Lehrveranstaltung	IF-WI-B29a	Pr	Donnerstag	8:15	90		R2.016
+	IB5A	Stützle	Unternehmensplanspiel (1. Teilgruppe)	Praxisbegleitende Lehrveranstaltung	IF-WI-B29a	Pr	Donnerstag	10:00	90		R2.016
+	IB5C	Bosch	Unternehmensplanspiel (2. Teilgruppe, 14-tägig)	Praxisbegleitende Lehrveranstaltung	IF-WI-B29a	Pr	Mittwoch	15:15	90		R2.016
+	IB5C	Bosch	Unternehmensplanspiel (2. Teilgruppe, 14-tägig)	Praxisbegleitende Lehrveranstaltung	IF-WI-B29a	Pr	Mittwoch	13:30	90		R2.016
+	IB1B	Braun	Softwareentwicklung I (Praktikum, 3. Teilgruppe)	Softwareentwicklung I	IF-WI-B05	Pr	Donnerstag	11:45	90		R1.010A
+	IC7 IF7		Bachelorseminar (Die Dozierenden der Informatik; Termine nach Absprache)	Bachelorseminar	IF-I-B-702	S	Dienstag	18:45	90	R0.009	
+	IC7 IF7		Bachelorseminar (Die Dozierenden der Informatik; Termine nach Absprache)	Bachelorseminar	IF-I-B-702	S	Donnerstag	17:00	90	R0.010	
+	IB3C IB3C	Möbert	Informationssysteme I	Informationssysteme I	IF-WI-B26	SU	Freitag	8:15	90	R1.006	
+	IG	Socher	Hauptseminar (Computergrafik und Bildverarbeitung)	Hauptseminar	IF-I-M004	S	Mittwoch	11:45	90		R3.024
+	IG	Socher	Hauptseminar (Computergrafik und Bildverarbeitung)	Hauptseminar	IF-I-M004	S	Mittwoch	13:30	90		R3.024
+IF IB IC		Schlotzhauer	Internet- und Medienrecht	Internet- und Medienrecht	IF-I-B-F45	FWP	Montag	17:00	90	R1.007	
+IB		Gümbel	ERP-Alternativen: Auswahl, Marktüberblick und Produktbeispiele	ERP-Alternativen: Auswahl, Marktüberblick und Produktbeispiele	IF-WI-B-30-34-28	FWP	Dienstag	17:00	90	R0.007	
+IB		Gümbel	ERP-Alternativen: Auswahl, Marktüberblick und Produktbeispiele	ERP-Alternativen: Auswahl, Marktüberblick und Produktbeispiele	IF-WI-B-30-34-28	FWP	Dienstag	18:45	90		R1.010A
+	GO7 IC7 IF3A IF3A IF3B IF3B	Socher	Software Engineering I	Software Engineering I	IF-I-B-306	SU	Donnerstag	11:45	90	R0.058	
+	IG	Fischer,Max	Hauptseminar (Embedded Systems)	Hauptseminar	IF-I-M004	S	Dienstag	11:45	90	R0.011	
+	IB5B	Recknagel	Projekt zum Praktischen Studiensemester (1. Teilgruppe)	Praxisbegleitende Lehrveranstaltung	IF-WI-B29c	PS	Mittwoch	8:15	90	R2.018	R1.010A
+	IB5A	Lindermeier	Seminar zum Praktischen Studiensemester (1. Teilgruppe; bitte schwarzes Brett beachten)	Praxisbegleitende Lehrveranstaltung	IF-WI-B29b	S	Freitag	13:30	90	R0.011	
+	IB3C	Möbert	Informationssysteme I (Praktikum, 1. Teilgruppe)	Informationssysteme I	IF-WI-B26	Pr	Donnerstag	10:00	90		R2.014
+	IB3C	Möbert	Informationssysteme I (Praktikum, 2. Teilgruppe)	Informationssysteme I	IF-WI-B26	Pr	Donnerstag	8:15	90		R2.008
+	IG IG	Fischer,Rainer Gleich	Methode der finiten Elemente	Methode der finiten Elemente	IF-I-M512	SU	Dienstag	15:15	90	R0.005	R3.024
+	IG IG	Fischer,Rainer Gleich	Methode der finiten Elemente	Methode der finiten Elemente	IF-I-M512	SU	Dienstag	13:30	90	R0.005	R3.024
+	IB5A	Lindermeier	Seminar zum Praktischen Studiensemester (1. Teilgruppe; bitte schwarzes Brett beachten)	Praxisbegleitende Lehrveranstaltung	IF-WI-B29b	S	Freitag	15:15	90	R0.011	
+	IC4 IF5	Pleier	Praxisbegleitende Lehrveranstaltung (in der Regel 14-tägig; siehe Aushang)	Praxisbegleitende Lehrveranstaltung	IF-I-B-502	S	Freitag	17:00	90		R3.026
+	IG	Fischer,Max	Hauptseminar (Embedded Systems)	Hauptseminar	IF-I-M004	S	Dienstag	10:00	90	R0.011	
+	IC4 IF5	Pleier	Praxisbegleitende Lehrveranstaltung (in der Regel 14-tägig; siehe Aushang)	Praxisbegleitende Lehrveranstaltung	IF-I-B-502	S	Freitag	8:15	90		R3.026
+	IN1 IN1	Luckow	Big Data und Largescale Systeme	Big Data und Largescale Systeme	IF-WI-M-13-15-6	FWP	Freitag	15:15	90	R0.010	R2.010
+	IC3 IC3 IF3A IF3A IF3B IF3B IF4 IF4	Eich-Soellner	Differentialrechnung in Rn und Differentialgleichungen	Differentialrechnung in Rn und Differentialgleichungen	IF-I-B-M01	SU	Dienstag	15:15	90	R0.012	
+	IN1 IN1	Luckow	Big Data und Largescale Systeme	Big Data und Largescale Systeme	IF-WI-M-13-15-6	FWP	Freitag	17:00	90	R0.010	R2.010
+	IF3A IF3B	Wischhof	Rechnerarchitektur (Übung, 3. Teilgruppe)	Rechnerarchitektur	IF-I-B-305	Ü	Montag	11:45	90	R1.007	R1.009
+	IS1	Zielke	Hauptseminar	Hauptseminar	IF-S-M-301	S	Donnerstag	8:15	90	R0.010	
+IF IB IC		Köhler	Konzepte moderner Programmiersprachen	Konzepte moderner Programmiersprachen	IF-I-B-F33	FWP	Mittwoch	11:45	90	R1.006	
+			Wartung	Wartung der Labore	Wartung	Belegung	Dienstag	8:15	90		R1.009 R1.010A R1.012 R2.008 R2.009 R2.010 R2.012 R2.014 R2.016 R3.019 R3.020 R3.021 R3.024 R3.026
+			Wartung	Wartung der Labore	Wartung	Belegung	Dienstag	10:00	90		R1.009 R1.010A R1.012 R2.008 R2.009 R2.010 R2.012 R2.014 R2.016 R3.019 R3.020 R3.021 R3.024 R3.026
+	IC4 IF5	Pleier	Praxisbegleitende Lehrveranstaltung (in der Regel 14-tägig; siehe Aushang)	Praxisbegleitende Lehrveranstaltung	IF-I-B-502	Pr	Freitag	13:30	90		R3.026
+	IC1 IC1 IF1C IF1C	Hammerschall	Softwareentwicklung I	Softwareentwicklung I	IF-I-B-104	SU	Dienstag	11:45	90	R1.008	
+	IC1 IC1 IF1C IF1C	Hammerschall	Softwareentwicklung I	Softwareentwicklung I	IF-I-B-104	SU	Mittwoch	11:45	90	R1.008	
+	IS1	Zielke	Hauptseminar	Hauptseminar	IF-S-M-301	S	Donnerstag	10:00	90	R0.058	
+	IG	Orehek	Echtzeit-Simulation	Echtzeit-Simulation	IF-I-M508	SU	Dienstag	8:15	90	R0.007	
+	IS1	Schlüchtermann	Finanzprodukte und Finanzmärkte	Finanzprodukte und Finanzmärkte	IF-S-M-101	SU	Dienstag	15:15	90	R1.007	
+	IS1	Schlüchtermann	Finanzprodukte und Finanzmärkte	Finanzprodukte und Finanzmärkte	IF-S-M-101	Ü	Dienstag	17:00	90	R1.008	
+	IC4 IF5	Pleier	Praxisbegleitende Lehrveranstaltung (in der Regel 14-tägig; siehe Aushang)	Praxisbegleitende Lehrveranstaltung	IF-I-B-502	Pr	Freitag	11:45	90		R3.026
+	IF6	Boczan	Management von IT-Projekten	Management von IT-Projekten	IF-I-B-602	SU	Donnerstag	10:00	90	R0.009	
+	IF6	Boczan	Management von IT-Projekten	Management von IT-Projekten	IF-I-B-602	Pr	Donnerstag	11:45	90	R0.009	
+IG	IN1	Mandl	Verteilte Systeme	Verteilte Systeme	IF-WI-M03	SU	Mittwoch	13:30	90	R1.008	
+IG	IN1	Mandl	Verteilte Systeme (Übung, 1. Teilgruppe)	Verteilte Systeme	IF-WI-M03	Ü	Donnerstag	13:30	90		R1.010A
+IG	IN1	Mandl	Verteilte Systeme (Übung, 2. Teilgruppe)	Verteilte Systeme	IF-WI-M03	Ü	Mittwoch	11:45	90		R1.010A
+IF IB IC		Soceanu	Netzwerkmanagement (Praktikum, 1. Teilgruppe)	Netzwerkmanagement	IF-I-B-F05	FWP	Mittwoch	11:45	90		R1.012
+	IG	Orehek	Echtzeit-Simulation	Echtzeit-Simulation	IF-I-M508	Pr	Dienstag	11:45	90		R3.024
+	IG IG	Hof	Web Engineering	Web Engineering	IG-123	SU	Mittwoch	15:15	90	R1.008	
+IF IB IC		Köhler	Konzepte moderner Programmiersprachen	Konzepte moderner Programmiersprachen	IF-I-B-F33	FWP	Mittwoch	10:00	90	R0.012	R1.012
+	IF3A IF3A	Wischhof	Rechnerarchitektur (Übung, 1. Teilgruppe)	Rechnerarchitektur	IF-I-B-305	Ü	Mittwoch	11:45	90	R0.011	R3.019
+IF IB IC		Hörwick	Kryptologie	Kryptologie	IF-I-B-F03	FWP	Dienstag	13:30	90	R1.007	
+	GO7 IF6 IF7 IF7	Kirch	Algorithmen und Datenstrukturen II	Algorithmen und Datenstrukturen II	IF-I-B-V01	SU	Dienstag	10:00	90	R1.007	
+	GO7 IF6 IF7	Kirch	Algorithmen und Datenstrukturen II (Praktikum, 1. Teilgruppe sowie GO7)	Algorithmen und Datenstrukturen II	IF-I-B-V01	Pr	Dienstag	11:45	90		R3.021
+	IF6 IF7	Kirch	Algorithmen und Datenstrukturen II (Praktikum, 2. Teilgruppe)	Algorithmen und Datenstrukturen II	IF-I-B-V01	Pr	Mittwoch	11:45	90		R1.009
+	IC3 IF3A IF3B IF4	Fischer,Rainer	Numerische Mathematik (Praktikum, 2. Teilgruppe)	Numerische Mathematik	IF-I-B-M02	Pr	Donnerstag	15:15	90	R0.012	
+IB	IB7A IB7B IB7C	Zimmer	Seminar Wirtschaftsinformatik I	Seminar Wirtschaftsinformatik I	IF-WI-B35	S	Dienstag	15:15	90	R0.011	
+IB	IB7A IB7B IB7C	Zimmer	Seminar Wirtschaftsinformatik I	Seminar Wirtschaftsinformatik I	IF-WI-B35	S	Dienstag	17:00	90	R0.011	
+	IC1 IC1 IF1C IF1C	Eich-Soellner	Analysis	Analysis	IF-I-B-101	Ü	Dienstag	10:00	90	R1.008	
+	IC1 IC1 IF1C IF1C	Eich-Soellner	Analysis	Analysis	IF-I-B-101	SU	Montag	10:00	90	R2.007	
+IF IB IC		Hörwick	Kryptologie	Kryptologie	IF-I-B-F03	FWP	Freitag	11:45	90	R1.007	
+	IG	Hof	Web Engineering	Web Engineering	IG-123	Pr	Mittwoch	17:00	90		R3.026
+	GO1 GO1 IF1A IF1A	Ruckert	Lineare Algebra (Tutorium)	Lineare Algebra	IF-I-B-103	Ü	Donnerstag	15:15	90	R1.008	
+	IC3 IC3 IF4 IF4	Köster	Integraltransformationen (Zusatzübung)	Integraltransformationen	IF-I-B-303	Ü	Montag	17:00	90	R0.006	R2.009
+IF	IC7	Hörwick	Wahrscheinlichkeitstheorie und Statistik II	Wahrscheinlichkeitstheorie und Statistik II	IF-S-B-M07	SU	Dienstag	11:45	90	R1.006	
+	IC1 IC1 IF1C IF1C	Eich-Soellner	Analysis (Tutorium)	Analysis	IF-I-B-101	Ü	Donnerstag	15:15	90	R2.007	
+IF	IC7	Hörwick	Wahrscheinlichkeitstheorie und Statistik II	Wahrscheinlichkeitstheorie und Statistik II	IF-S-B-M07	SU	Freitag	8:15	90	R1.007	
+IB		Boczan	IT- Projektmanagement	IT- Projektmanagement	IF-WI-B-30-34-24	Ü	Donnerstag	15:15	90	R0.005	
+	IF3B	Kirch	Algorithmen und Datenstrukturen I (Praktikum, 2. Teilgruppe)	Algorithmen und Datenstrukturen I	IF-I-B-301	Pr	Mittwoch	8:15	90	R0.009	R2.008
+	IF3B	Kirch	Algorithmen und Datenstrukturen I (Praktikum, 1. Teilgruppe)	Algorithmen und Datenstrukturen I	IF-I-B-301	Pr	Dienstag	13:30	90	R2.007	R2.010
+	IS1	Schulz	Finanzmärkte und Finanzmarktakteure aus rationaler, psychologischer und ethischer Sicht	Finanzmärkte und Finanzmarktakteure aus rationaler, psychologischer und ethischer Sicht	IF-S-M-P05	SU	Donnerstag	18:45	90	R2.007	
+IB		Boczan	IT- Projektmanagement	IT- Projektmanagement	IF-WI-B-30-34-24	SU	Donnerstag	13:30	90	R0.005	
+	IG	Hammerschall	Hauptseminar (Software Engineering	Hauptseminar	IF-I-M004	S	Mittwoch	10:00	90	R0.010	
+IF IB IC		Hafner	Mobile Anwendungen	Mobile Anwendungen	IF-I-B-F48	Pr	Dienstag	13:30	90		R2.012
+IF IB IC		Hafner	Mobile Anwendungen	Mobile Anwendungen	IF-I-B-F48	Pr	Dienstag	15:15	90		R1.010A
+IG IF		Barker	Embedded Software Development (Advanced Embedded Software Projekt für IG)	Embedded Software Development	IF-I-B-F50	PS	Mittwoch	10:00	90		R3.024
+	IG	Hammerschall	Requirements Engineering	Requirements Engineering	IF-I-B-F39	Pr	Donnerstag	15:15	90		R3.021
+IS	IG	Leitner	Logik-Kalküle	Logik-Kalküle	IF-I-M100	SU	Donnerstag	8:15	90	R0.009	
+IS	IG	Leitner	Logik-Kalküle	Logik-Kalküle	IF-I-M100	Ü	Donnerstag	10:00	90	R0.010	
+IF	IC7	Köster	Projektstudium Modellierungsseminar	Projektstudium Modellierungsseminar	IF-S-B-702	PS	Montag	10:00	90		R3.019
+IF	IC7	Köster	Projektstudium Modellierungsseminar	Projektstudium Modellierungsseminar	IF-S-B-702	PS	Freitag	10:00	90		R3.019
+IS	IG IN1	Hertle	Datenanalyse (Übung, 2. Teilgruppe)	Datenanalyse	IF-WI-M09	Ü	Donnerstag	8:15	90		R2.010
+	IC1 IC1 IF1C IF1C	Ruckert	Lineare Algebra (Tutorium)	Lineare Algebra	IF-I-B-103	SU	Mittwoch	13:30	90	R2.007	
+	IB5B	Recknagel	Projekt zum Praktischen Studiensemester (1. Teilgruppe)	Praxisbegleitende Lehrveranstaltung	IF-WI-B29c	PS	Mittwoch	10:00	90	R2.018	R2.012
+	IC4 IF5	Pleier	Praxisbegleitende Lehrveranstaltung (in der Regel 14-tägig; siehe Aushang)	Praxisbegleitende Lehrveranstaltung	IF-I-B-502	Pr	Freitag	10:00	90		R3.026
+	IB5B	Möbert	Seminar zum Praktischen Studiensemester (1. Teilgruppe)	Praxisbegleitende Lehrveranstaltung	IF-WI-B29b	S	Donnerstag	17:00	90	R2.007	
+	IB5B	Möbert	Seminar zum Praktischen Studiensemester (1. Teilgruppe)	Praxisbegleitende Lehrveranstaltung	IF-WI-B29b	S	Donnerstag	15:15	90	R0.007	
+IF IB IC		Soceanu	Netzwerkmanagement (Praktikum, 2. Teilgruppe - bei Bedarf)	Netzwerkmanagement	IF-I-B-F05	FWP	Mittwoch	13:30	90		R1.012
+	IC1 IF1C	Hammerschall	Softwareentwicklung I (Praktikum, 1. Teilgruppe)	Softwareentwicklung I	IF-I-B-104	Pr	Freitag	13:30	90		R2.008
+	IC1 IF1C	Hammerschall	Softwareentwicklung I (Praktikum, 3. Teilgruppe)	Softwareentwicklung I	IF-I-B-104	Pr	Donnerstag	11:45	90		R2.008
+	IC1 IF1C	Hammerschall	Softwareentwicklung I (Praktikum, 2. Teilgruppe)	Softwareentwicklung I	IF-I-B-104	Pr	Dienstag	15:15	90		R3.021
+	IF1B IF1B	Anlauff	IT-Systeme I (Praktikum, 1. Teilgruppe)	IT-Systeme I	IF-I-B-102	Pr	Mittwoch	13:30	90		R1.009
+	IF6 IF7 IF7	Böttcher	Software Engineering II	Software Engineering II	IF-I-B-V06	SU	Montag	15:15	90	R1.008	R1.009
+	IF6 IF7 IF7	Böttcher	Software Engineering II (Praktikum, 1. Teilgruppe)	Software Engineering II	IF-I-B-V06	Pr	Montag	17:00	90	R1.008	R1.009
+	IF1B IF1B	Vogt	Technische Informatik I	Technische Informatik I	IF-I-B-105	SU	Montag	13:30	90	R1.006	
+	IF1B	Anlauff	IT-Systeme I (Praktikum, 2. Teilgruppe)	IT-Systeme I	IF-I-B-102	Pr	Montag	11:45	90		R3.026
+	IC1 IC1 IF1C IF1C	Ruckert	Lineare Algebra	Lineare Algebra	IF-I-B-103	Ü	Donnerstag	13:30	90	R1.008	
+	IC1 IC1 IF1C IF1C	Ruckert	Lineare Algebra	Lineare Algebra	IF-I-B-103	Ü	Mittwoch	15:15	90	R2.007	
+	IF6 IF7 IF7	Böttcher	Software Engineering II (Praktikum, 2. Teilgruppe)	Software Engineering II	IF-I-B-V06	Pr	Montag	13:30	90	R1.008	R1.009
+	IF6 IF7 IF7	Staudt	Datenbanksysteme II	Datenbanksysteme II	IF-I-B-V07	SU	Donnerstag	15:15	90	R1.006	
+	IF6 IF7 IF7	Staudt	Datenbanksysteme II (Praktikum, 1. Teilgruppe)	Datenbanksysteme II	IF-I-B-V07	Pr	Montag	11:45	90		R2.012
+	IF6 IF7 IF7	Staudt	Datenbanksysteme II (Praktikum, 2. Teilgruppe)	Datenbanksysteme II	IF-I-B-V07	Pr	Montag	10:00	90		R2.012
+	IC4 IF5	Pleier	Praxisbegleitende Lehrveranstaltung (in der Regel 14-tägig; siehe Aushang)	Praxisbegleitende Lehrveranstaltung	IF-I-B-502	Pr	Freitag	15:15	90		R3.026
+	IF6 IF7 IF7	Beier	Datenschutz und IT-Sicherheit II (Anteil Datenschutz; Aushang beachten)	Datenschutz und IT-Sicherheit II	IF-I-B-V04	SU	Freitag	17:00	90	R0.009	
+	IF6 IF7 IF7	Beier	Datenschutz und IT-Sicherheit II (Anteil Datenschutz;  Aushang beachten)	Datenschutz und IT-Sicherheit II	IF-I-B-V04	SU	Freitag	13:30	90	R0.009	
+	IF3A	Kirch	Algorithmen und Datenstrukturen I (Praktikum, 3. Teilgruppe)	Algorithmen und Datenstrukturen I	IF-I-B-301	Pr	Donnerstag	8:15	90	R2.007	R3.021
+	IB1A	Zimmer	Softwareentwicklung I (Praktikum, 3. Teilgruppe)	Softwareentwicklung I	IF-WI-B05	Pr	Freitag	13:30	90		R1.009
+	IB1C	Braun	Softwareentwicklung I (Praktikum, 3. Teilgruppe)	Softwareentwicklung I	IF-WI-B05	Pr	Donnerstag	10:00	90		R2.012
+	IB3C	Schwenkert	Datenbanksysteme (Praktikum, 4. Teilgruppe)	Datenbanksysteme 	IF-WI-B12	Pr	Donnerstag	11:45	90		R2.009
+	IB3C	Thurner	Softwareengineering I (Praktikum, 3. Teilgruppe)	Softwareengineering I	IF-WI-B14	Pr	Mittwoch	13:30	90		R2.012

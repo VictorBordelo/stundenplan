@@ -1,0 +1,225 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<title>WTSP 2012</title>
+		<link href="css/ui-lightness/jquery-ui-1.8.19.custom.css" rel="stylesheet" type="text/css" media="all" />
+        <link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
+        <link href="css/availability.css" rel="stylesheet" type="text/css" media="all" />
+		<script type="text/javascript" src="../lib/jquery-1.7.2.js"></script>
+		<script type="text/javascript" src="../lib/jquery-ui-1.8.19.custom.js"></script>
+		<script type="text/javascript" src="../lib/jquery.flip.min.js"></script>
+		<script type="text/javascript" src="js/gui/scrollpane.js"></script>
+		<script type="text/javascript" src="js/simpleHyphenator.js"></script>
+		<script type="text/javascript" src="js/communicator.js"></script>
+		<script type="text/javascript" src="js/wtObjects.js"></script>
+		<script type="text/javascript" src="js/divgenerator.js"></script>
+		<script type="text/javascript" src="js/gui/common.js"></script>
+		<script type="text/javascript" src="js/gui/drag&drop.js"></script>
+		<script type="text/javascript" src="js/gui/timetable.js"></script>
+	</head>
+	<body>
+		<div id="wrapper">
+			<div id="header">
+				<h1>Stundenplaner der Hochschule München</h1>
+				<p class="small">
+					Prototype v0.1
+				</p>
+			</div>
+			<div id="buttons-top">
+				<button>Neuer Eintrag</button>
+				<button>Optionen</button>
+				<button>Planen</button>
+				<button>Verfügbarkeiten setzen</button>
+				<button>Hilfe</button>
+			</div>
+			<div id="left-panel">
+				<div class="view-listing">
+					<ul>
+						<li><a href="#tab-prof">Dozent</a></li>
+						<li><a href="#tab-grp">Gruppe</a></li>
+						<li><a href="#tab-room">Raum</a></li>
+					</ul>
+					<div id="tab-prof">
+						<div class="scroll-pane-tab tab-prof ui-widget ui-widget-header ui-corner-all">
+							<div class="scroll-content-tab tab-prof">
+							</div>
+							<div class="scroll-bar-wrap-vert ui-widget-content ui-corner-bottom">
+								<div class="scroll-bar-tab">
+								</div>
+							</div>
+						</div>
+					</div>
+					<div id="tab-grp">
+						<div class="scroll-pane-tab tab-grp ui-widget ui-widget-header ui-corner-all">
+							<div class="scroll-content-tab tab-grp">
+							</div>
+							<div class="scroll-bar-wrap-vert ui-widget-content ui-corner-bottom">
+								<div class="scroll-bar-tab">
+								</div>
+							</div>
+						</div>
+					</div>
+					<div id="tab-room">
+						<div class="scroll-pane-tab tab-room ui-widget ui-widget-header ui-corner-all">
+							<div class="scroll-content-tab tab-room">
+							</div>
+							<div class="scroll-bar-wrap-vert ui-widget-content ui-corner-bottom">
+								<div class="scroll-bar-tab">
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div id="time-table-container">
+				<table class="time-table">
+				<thead>
+				<tr>
+					<th>
+						Uhrzeit
+					</th>
+					<th>
+						Montag
+					</th>
+					<th>
+						Dienstag
+					</th>
+					<th>
+						Mittwoch
+					</th>
+					<th>
+						Donnerstag
+					</th>
+					<th>
+						Freitag
+					</th>
+				</tr>
+				</tbody>
+				<tbody>
+				<tr>
+					<th>
+						08:15 - 09:45
+					</th>
+					<td class="time-table-cell">
+					</td>
+					<td class="time-table-cell">
+					</td>
+					<td class="time-table-cell">
+					</td>
+					<td class="time-table-cell">
+					</td>
+					<td class="time-table-cell">
+					</td>
+				</tr>
+				<tr>
+					<th>
+						10:00 - 11:30
+					</th>
+					<td class="time-table-cell">
+					</td>
+					<td class="time-table-cell">
+					</td>
+					<td class="time-table-cell">
+					</td>
+					<td class="time-table-cell">
+					</td>
+					<td class="time-table-cell">
+					</td>
+				</tr>
+				<tr>
+					<th>
+						11:45 - 13:15
+					</th>
+					<td class="time-table-cell">
+					</td>
+					<td class="time-table-cell">
+					</td>
+					<td class="time-table-cell">
+					</td>
+					<td class="time-table-cell">
+					</td>
+					<td class="time-table-cell">
+					</td>
+				</tr>
+				<tr>
+					<th>
+						13:30 - 15:00
+					</th>
+					<td class="time-table-cell">
+					</td>
+					<td class="time-table-cell">
+					</td>
+					<td class="time-table-cell">
+					</td>
+					<td class="time-table-cell">
+					</td>
+					<td class="time-table-cell">
+					</td>
+				</tr>
+				<tr>
+					<th>
+						15:15 - 16:45
+					</th>
+					<td class="time-table-cell">
+					</td>
+					<td class="time-table-cell">
+					</td>
+					<td class="time-table-cell">
+					</td>
+					<td class="time-table-cell">
+					</td>
+					<td class="time-table-cell">
+					</td>
+				</tr>
+				<tr>
+					<th>
+						17:00 - 18:30
+					</th>
+					<td class="time-table-cell">
+					</td>
+					<td class="time-table-cell">
+					</td>
+					<td class="time-table-cell">
+					</td>
+					<td class="time-table-cell">
+					</td>
+					<td class="time-table-cell">
+					</td>
+				</tr>
+				<tr>
+					<th>
+						18:45 - 20:15
+					</th>
+					<td class="time-table-cell">
+					</td>
+					<td class="time-table-cell">
+					</td>
+					<td class="time-table-cell">
+					</td>
+					<td class="time-table-cell">
+					</td>
+					<td class="time-table-cell">
+					</td>
+				</tr>
+				</tbody>
+				</table>
+			</div>
+		</div>
+		<div class="pane-frame">
+			<div class="horizontal-list">
+				<div class="scroll-pane-hor ui-widget ui-widget-header ui-corner-all">
+					<div id="scroll-content-hor">
+					</div>
+					<div class="scroll-bar-wrap-hor ui-widget-content ui-corner-bottom">
+						<div class="scroll-bar-hor">
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- End horizontal-list -->
+			<div style="clear: both;">
+			</div>
+		</div>
+	</body>
+</html>

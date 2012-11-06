@@ -1,0 +1,2 @@
+#!/bin/bash
+java -jar ~/.m2/repository/net/sf/schemaSpy/5.0.0/schemaSpy-5.0.0.jar -t hsqldb -host localhost -db plandb -u SA -noschema -dp ~/.m2/repository/org/hsqldb/hsqldb/2.2.8/hsqldb-2.2.8.jar -o db-schema

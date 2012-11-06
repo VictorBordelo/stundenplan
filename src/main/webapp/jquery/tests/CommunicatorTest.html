@@ -1,0 +1,37 @@
+<html>
+<head>
+<script type="text/JavaScript" src="../js/jquery-1.7.2.js"></script>
+<script type="text/JavaScript" src="../js/wtObjects.js"></script>
+<script type="text/JavaScript" src="../js/communicator.js"></script>
+
+<title> Testseite für JS Communicator</title>
+</head>
+<body>
+
+<div id="ausgabe"> </div>
+
+
+<script language="javascript" type="text/javascript">
+
+//CallBack Funktion für Kommunikator (Ausgabe)
+var printer = function callBack(s) {
+    $.each(s,function(i,vals){
+       $.each(vals,function(k,val){$("#ausgabe").append(k + ": " + val + "<br>");});
+    $("#ausgabe").append("<br>");
+    });
+}
+
+//Tests für Communicator
+WTSP.wtcommunicator.getProfs(printer);
+WTSP.wtcommunicator.getPersons(printer);
+WTSP.wtcommunicator.getRooms(printer);
+WTSP.wtcommunicator.getProfPlan(new WTprofessor("Abendroth",1,"test"),printer);
+WTSP.wtcommunicator.getOccu(new WTlecture(230,"test","test","test","test"),printer);
+WTSP.wtcommunicator.getStudyGroups(printer);
+WTSP.wtcommunicator.setLecture(new WTlecture(230,"R0.058", 1, "Softwareentwicklung II",1));
+
+</script>
+
+</body>
+
+</html>

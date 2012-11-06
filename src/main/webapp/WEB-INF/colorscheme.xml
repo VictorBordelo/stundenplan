@@ -1,0 +1,44 @@
+<?xml version="1.0"?>
+<!-- see http://www.colorcombos.com/color-schemes/408/ColorCombo408.html -->
+<toolbox>
+  <!-- <data type="string">
+     <key>color1</key>
+     <value>#6285C7</value>
+  </data>
+  <data type="string">
+     <key>color2</key>
+     <value>#AAA393</value>
+  </data>
+  <data type="string">
+     <key>color3</key>
+     <value>#9CC7F2</value>
+  </data>
+  <data type="string">
+     <key>color4</key>
+     <value>#526C85</value>
+  </data>
+  <data type="string">
+     <key>color5</key>
+     <value>#D0E8F4</value>
+  </data>-->
+  <data type="string">
+     <key>color1</key>
+     <value>#C84D5F</value>
+  </data>
+  <data type="string">
+     <key>color2</key>
+     <value>7DC24B</value>
+  </data>
+  <data type="string">
+     <key>color3</key>
+     <value>#D8DEAE</value>
+  </data>
+  <data type="string">
+     <key>color4</key>
+     <value>#8EBD99</value>
+  </data>
+  <data type="string">
+     <key>color5</key>
+     <value>#DDC23F</value>
+  </data>
+</toolbox>
