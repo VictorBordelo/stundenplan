@@ -3,7 +3,6 @@ package edu.hm;
 import org.eclipse.jetty.server.*;
 import org.eclipse.jetty.webapp.*;
 
-// Starte Stundenplan
 public class JettyStarterForStundenplan {
     public static final String APP_URL = "/";
     public static final String WEBAPP_DIR = "./src/main/webapp/";
