@@ -1,2 +1,6 @@
 starthsqlserver.bat
 cleanstarthsqlserver.bat
+bin/
+target/
+hsql*
+.classpath
