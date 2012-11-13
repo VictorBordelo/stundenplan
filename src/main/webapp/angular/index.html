@@ -16,35 +16,24 @@
   <script src="lib/jquery/jquery-ui-1.9.0.custom.min.js"></script>
   <script>
     $(function() {
-        $( "#radio" ).buttonset();
-        $( "#radio1" ).click(function(){
-		    $(".professors").show();
-		    $(".rooms").hide();
-		    $(".groups").hide();
-		});
-        $( "#radio2" ).click(function(){
-		    $(".professors").hide();
-		    $(".rooms").show();
-		    $(".groups").hide();
-		});
-        $( "#radio3" ).click(function(){
-		    $(".professors").hide();
-		    $(".rooms").hide();
-		    $(".groups").show();
-		});
-		
+        $( "#radio" ).buttonset()
     });
     
     $(document).ready(function(){
     });
 
+	function show_professor(id)
+	{
+		//alert($('.groups').scope());
+		alert(id);
+	}
   </script>
 </head>
 <body>
 	<div id="radio">
-		<input type="radio" id="radio1" name="radio" checked="checked" /><label for="radio1">professors</label>
-		<input type="radio" id="radio2" name="radio" /><label for="radio2">rooms</label>
-		<input type="radio" id="radio3" name="radio" /><label for="radio3">groups</label>
+		<input type="radio" id="radio1" value=0 name="radio" ng-model="active" /><label for="radio1">professors</label>
+		<input type="radio" id="radio2" value=1 name="radio" ng-model="active" /><label for="radio2">rooms</label>
+		<input type="radio" id="radio3" value=2 name="radio" ng-model="active" /><label for="radio3">groups</label>
 	</div>
 	
 	<div ng-view></div>

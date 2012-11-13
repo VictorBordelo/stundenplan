@@ -4,22 +4,22 @@
 			<b>Search:</b>
 			<input ng-model="query">
 		</div>
-		<div>
+		<div ng-hide="active != 0">
 			<ul class="professors">
 				<li ng-repeat="professor in professors | filter:query" class="professor">
-					<a href="#/start/{{professor.id}}">{{professor.name}} {{professor.vorname}}</a>
+					<a onclick="show_professor({{professor.id}})">{{professor.name}} {{professor.vorname}}</a>
 				</li>
 			</ul>
 		</div>
-		<div>
-			<ul class="rooms" style="display: none">
+		<div ng-hide="active != 1">
+			<ul class="rooms">
 				<li ng-repeat="room in rooms | filter:query" class="room">
 					<a href="#/start/{{professor.id}}">{{room.name}}</a>
 				</li>
 			</ul>
 		</div>
-		<div>
-			<ul class="groups" style="display: none">
+		<div ng-hide="active != 2">
+			<ul class="groups">
 				<li ng-repeat="group in groups | filter:query" class="group">
 					<a href="#/start/{{professor.id}}">{{group.program}}{{group.semester}} {{group.groupCode}}</a>
 				</li>
@@ -27,6 +27,7 @@
 		</div>
 	</div>
 	<div class="content">
+		<p>ID: {{s}}</p>
 		<table>
 			<thead><th>Uhrzeit</th><th ng-repeat="day in days">{{day.text}}</th></thead>
 			<tr ng-repeat="slot in slots">

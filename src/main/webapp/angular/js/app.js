@@ -28,4 +28,5 @@ app.run(function($rootScope) {
 		 {text:'17:00 - 18:30', id:5},
 		 {text:'18:45 - 20:15', id:6},
 		];
+	$rootScope.active = 0;
 });
