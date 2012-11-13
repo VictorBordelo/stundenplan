@@ -1,4 +1,37 @@
-/* app css stylesheet */
+
+body {
+	padding-top: 20px;
+}
+
+.professors {
+	list-style: none;
+}
+.rooms {
+	list-style: none;
+}
+.groups {
+	list-style: none;
+}
+
+
+.sidebar {
+	float: left;
+	margin-left: 10px;	
+	margin-right: 10px;	
+}
+
+.sidebar input {
+	display: block;
+}
+
+.cell {
+	width: 100px;
+	height: 50px;
+	text-align: center;
+	vertical-align: middle;
+}
+
+/* app css stylesheet 
 
 body {
   padding-top: 20px;
@@ -22,7 +55,6 @@ body {
   padding-top: 15px;
 }
 
-/** Detail View **/
 img.phone {
   float: left;
   border: 1px solid black;
@@ -82,3 +114,4 @@ ul.specs dt {
 h1 {
   border-bottom: 1px solid gray;
 }
+*/

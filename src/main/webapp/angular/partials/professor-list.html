@@ -1,0 +1,39 @@
+<div>
+	<div class="sidebar">
+		<div>
+			<b>Search:</b>
+			<input ng-model="query">
+		</div>
+		<div>
+			<ul class="professors">
+				<li ng-repeat="professor in professors | filter:query" class="professor">
+					<a href="#/start/{{professor.id}}">{{professor.name}} {{professor.vorname}}</a>
+				</li>
+			</ul>
+		</div>
+		<div>
+			<ul class="rooms" style="display: none">
+				<li ng-repeat="room in rooms | filter:query" class="room">
+					<a href="#/start/{{professor.id}}">{{room.name}}</a>
+				</li>
+			</ul>
+		</div>
+		<div>
+			<ul class="groups" style="display: none">
+				<li ng-repeat="group in groups | filter:query" class="group">
+					<a href="#/start/{{professor.id}}">{{group.program}}{{group.semester}} {{group.groupCode}}</a>
+				</li>
+			</ul>
+		</div>
+	</div>
+	<div class="content">
+		<table>
+			<thead><th>Uhrzeit</th><th ng-repeat="day in days">{{day.text}}</th></thead>
+			<tr ng-repeat="slot in slots">
+				<td>{{slot.text}}</td>
+				<td ng-repeat="day in days" class="cell" id="d{{day.id}}s{{slot.id}}">d{{day.id}}s{{slot.id}}</td>
+			</tr>
+		</table>
+	</div>
+</div>
+	

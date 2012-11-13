@@ -1,20 +1,52 @@
 <!doctype html>
-<html lang="en"  ng-app="phonecat">
+<html lang="en"  ng-app="stundenplan">
 <head>
   <meta charset="utf-8">
-  <title>Google Phone Gallery</title>
+  <title>Stundenplaner der Hochschule München</title>
   <link rel="stylesheet" href="css/app.css">
   <link rel="stylesheet" href="css/bootstrap.css">
+  <link rel="stylesheet" href="css/smoothness/jquery-ui-1.9.0.custom.min.css">
   <script src="lib/angular/angular.js"></script>
   <script src="js/app.js"></script>
   <script src="js/controllers.js"></script>
   <script src="js/filters.js"></script>
   <script src="js/services.js"></script>
   <script src="lib/angular/angular-resource.js"></script>
+  <script src="lib/jquery/jquery-1.8.2.min.js"></script>
+  <script src="lib/jquery/jquery-ui-1.9.0.custom.min.js"></script>
+  <script>
+    $(function() {
+        $( "#radio" ).buttonset();
+        $( "#radio1" ).click(function(){
+		    $(".professors").show();
+		    $(".rooms").hide();
+		    $(".groups").hide();
+		});
+        $( "#radio2" ).click(function(){
+		    $(".professors").hide();
+		    $(".rooms").show();
+		    $(".groups").hide();
+		});
+        $( "#radio3" ).click(function(){
+		    $(".professors").hide();
+		    $(".rooms").hide();
+		    $(".groups").show();
+		});
+		
+    });
+    
+    $(document).ready(function(){
+    });
+
+  </script>
 </head>
 <body>
-
-  <div ng-view></div>
-
+	<div id="radio">
+		<input type="radio" id="radio1" name="radio" checked="checked" /><label for="radio1">professors</label>
+		<input type="radio" id="radio2" name="radio" /><label for="radio2">rooms</label>
+		<input type="radio" id="radio3" name="radio" /><label for="radio3">groups</label>
+	</div>
+	
+	<div ng-view></div>
 </body>
 </html>
