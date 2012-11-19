@@ -2,9 +2,11 @@
 
 /* Directives */
 
-angular.module('directives', []);
-    /*.directive('makebuttonset',function() {
+/*
+angular.module('directives', [])
+    .directive('buttonset',function() {
         return function(scope, elm, attrs) {
-            //elm.makebuttonset();
+            elm.buttonset();
         };
-    })*/
+    });
+*/

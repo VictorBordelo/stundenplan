@@ -1,41 +1,128 @@
 <!doctype html>
 <html lang="en"  ng-app="stundenplan">
-<head>
-  <meta charset="utf-8">
-  <title>Stundenplaner der Hochschule München</title>
-  <link rel="stylesheet" href="css/app.css">
-  <link rel="stylesheet" href="css/bootstrap.css">
-  <link rel="stylesheet" href="css/smoothness/jquery-ui-1.9.0.custom.min.css">
-  <script src="lib/angular/angular.js"></script>
-  <script src="js/app.js"></script>
-  <script src="js/controllers.js"></script>
-  <script src="js/filters.js"></script>
-  <script src="js/services.js"></script>
-  <script src="lib/angular/angular-resource.js"></script>
-  <script src="lib/jquery/jquery-1.8.2.min.js"></script>
-  <script src="lib/jquery/jquery-ui-1.9.0.custom.min.js"></script>
-  <script>
-    $(function() {
-        $( "#radio" ).buttonset()
-    });
-    
-    $(document).ready(function(){
-    });
+	<head>
+		<meta charset="utf-8">
+		<title>Stundenplaner der Hochschule München</title>
 
-	function show_professor(id)
-	{
-		//alert($('.groups').scope());
-		alert(id);
-	}
-  </script>
-</head>
-<body>
-	<div id="radio">
-		<input type="radio" id="radio1" value=0 name="radio" ng-model="active" /><label for="radio1">professors</label>
-		<input type="radio" id="radio2" value=1 name="radio" ng-model="active" /><label for="radio2">rooms</label>
-		<input type="radio" id="radio3" value=2 name="radio" ng-model="active" /><label for="radio3">groups</label>
-	</div>
-	
-	<div ng-view></div>
-</body>
+		<link rel="stylesheet" href="css/bootstrap.min.css">
+		<link rel="stylesheet" href="css/smoothness/jquery-ui-1.9.0.custom.min.css">
+		<link rel="stylesheet" href="lib/angular-ui/angular-ui.min.css">
+		<link rel="stylesheet" href="css/app.css">
+
+		<script src="lib/jquery/jquery-1.8.2.min.js"></script>
+		<script src="lib/jquery/jquery-ui-1.9.0.custom.min.js"></script>
+		<script src="lib/angular/angular.js"></script>
+		<script src="lib/angular-ui/angular-ui.min.js"></script>
+		<script src="js/bootstrap-modal.js"></script>
+
+		<script src="js/app.js"></script>
+		<script src="js/controllers.js"></script>
+		<script src="js/directives.js"></script>
+		<script src="js/filters.js"></script>
+		<script src="js/services.js"></script>
+		<script src="lib/angular/angular-resource.js"></script>
+
+	</head>
+	<body ng-controller="DataController">
+		<div class="sidebar">
+			<img src="img/logo.png"/>
+			<div id="radio" ui-jq="buttonset">
+				<input type="radio" id="radio1" value=0 name="radio" ng-model="active"  checked="checked"/>
+				<label for="radio1">Dozent</label>
+				<input type="radio" id="radio2" value=1 name="radio" ng-model="active" />
+				<label for="radio2">Gruppe</label>
+				<input type="radio" id="radio3" value=2 name="radio" ng-model="active" />
+				<label for="radio3">Raum</label>
+			</div>
+			<div class="filterbox">
+				<b>Filter:</b>
+				<input ng-model="query">
+			</div>
+			<div class="list" ng-switch on="active">
+				<div ng-switch-default>
+					<ul class="professors">
+						<li ng-class="{selected: professor.selected}" ng-repeat="professor in professors | filter:query" class="professor">
+							<a ng-click="selectProfessor(professor)"><i ng-hide="!professor.backup">* </i>{{professor.name}} {{professor.vorname}}</a>
+						</li>
+					</ul>
+				</div>
+				<div ng-switch-when="1">
+					<ul class="groups">
+						<li ng-class="{selected: group.selected}" ng-repeat="group in groups | filter:query" class="group">
+							<a ng-click="selectGroup(group)"><i ng-hide="!group.backup">* </i>{{group.program}}{{group.semester}} {{group.groupCode}}</a>
+						</li>
+					</ul>
+				</div>
+				<div ng-switch-when="2">
+					<ul class="rooms">
+						<li ng-class="{selected: room.selected}" ng-repeat="room in rooms | filter:query" class="room">
+							<a ng-click="selectRoom(room)"><i ng-hide="!room.backup">* </i>{{room.name}} [{{room.size}}]</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div class="content">
+			<div class="toolbar">
+				<div class="buttonset">
+					<button ng-click="save()" ui-jq="button" ui-options="{icons: { primary: 'ui-icon-disk'}}">
+						Speichern ...
+					</button>
+					<button ng-click="undo(selected[active])" ng-hide="!selected[active].backup" ui-jq="button" ui-options="{icons: { primary: 'ui-icon-trash'}}">
+						Änderungen verwerfen
+					</button>
+				</div>
+			</div>
+			<div ng-hide="!selected[active]">
+				<h1 ng-hide="active != 0">{{selected[active].name}} {{selected[active].vorname}}</h1>
+				<h1 ng-hide="active != 1">{{selected[active].program}}{{selected[active].semester}} {{selected[active].groupCode}}</h1>
+				<h1 ng-hide="active != 2">{{selected[active].name}}</h1>
+				<table class="timetable">
+					<thead>
+						<th><a ng-click="toggle(selected[active])">Uhrzeit</a></th><th ng-repeat="day in days"><a ng-click="toggle(selected[active], day)">{{day.text}}</a></th>
+					</thead>
+					<tr ng-repeat="slot in slots">
+						<td><a ng-click="toggle(selected[active], null, slot)" >{{slot.text}}</a></td>
+						<td ng-repeat="day in days" ng-click="toggle(selected[active], day, slot)" class="mark{{selected[active].availability[index(day, slot)]}} cell" id="d{{day.id}}s{{slot.id}}"></td>
+					</tr>
+				</table>
+			</div>
+
+			<div ui-modal class="save-dialog fade ui-dialog" ng-model="modalShown">
+				<div class="ui-dialog-titlebar ui-widget-header ui-corner-all ui-helper-clearfix">
+					<span class="ui-dialog-title" id="ui-id-8">Geänderte Datensätze</span><a role="button" ng-click="modalShown=false" class="ui-dialog-titlebar-close ui-corner-all" href="#"><span class="ui-icon ui-icon-closethick">close</span></a>
+				</div>
+				<div class="ui-dialog-content ui-widget-content list">
+					<b>Dozenten</b>
+					<table class="changetable">
+						<tr ng-repeat="professor in changed['professors']" ng-hide="!professor.backup">
+							<td><a ng-click="undo(professor)" class="ui-icon ui-icon-trash"></a></td>
+							<td>{{professor.name}} {{professor.vorname}}</td>
+						</tr>
+					</table>
+					<b>Gruppen</b>
+					<table class="changetable">
+						<tr ng-repeat="group in changed['groups']" ng-hide="!group.backup">
+							<td><a ng-click="undo(group)" class="ui-icon ui-icon-trash"></a></td>
+							<td>{{group.program}}{{group.semester}} {{group.groupCode}}</td>
+						</tr>
+					</table>
+					<b>Räume</b>
+					<table class="changetable">
+						<tr ng-repeat="room in changed['rooms']" ng-hide="!room.backup">
+							<td><a ng-click="undo(room)" class="ui-icon ui-icon-trash"></a></td>
+							<td>{{room.name}}</td>
+						</tr>
+					</table>
+				</div>
+				<div class="ui-dialog-buttonpane ui-widget-content ui-helper-clearfix">
+					<div class="ui-dialog-buttonset">
+						<button ng-click="save()" aria-disabled="false" role="button" class="ui-button ui-widget ui-state-default ui-corner-all ui-button-text-only" type="button">
+							<span class="ui-button-text">Speichern</span>
+						</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
 </html>
