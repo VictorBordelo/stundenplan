@@ -50,6 +50,10 @@
 	.sidebar .list ul li .clear {
 		background-color: #AAAAAA;
 	}
+	
+	.sidebar .list ul li .set {
+		background-color: #F00;
+	}
 
 	.sidebar .list .selected {
 		background-color: #DDD;
@@ -90,6 +94,42 @@
 	.content h1 {
 		margin-bottom: 20px;
 		font-size: 18px;
+	}
+
+
+	.mark0{
+		background-color: #ff4444;
+	}
+	
+	.mark1{
+		background-color: #7ABA7B;
+	}
+	
+	
+	.cell {
+		width: 100px;
+		height: 50px;
+		text-align: center;
+		vertical-align: middle;
+	}
+	
+	.content .mode1.rect {
+		background-color: #00ff00;
+	}
+	
+	.content .mode0.rect {
+		background-color: #ff0000;
+	}
+
+	.mark0 .lockindicator {
+		margin-left: 42px;
+	    width: 16px;
+	    height: 16px;
+	    background-image: url("../img/quick_lock.png");
+	    display: block;
+	    text-indent: -99999px;
+	    overflow: hidden;
+	    background-repeat: no-repeat;
 	}
 
 .save-dialog {
@@ -136,21 +176,4 @@ body {
 }
 .groups {
 	list-style: none;
-}
-
-
-.mark0{
-	background-color: red;
-}
-
-.mark1{
-	background-color: #AAAAAA;
-}
-
-
-.cell {
-	width: 100px;
-	height: 50px;
-	text-align: center;
-	vertical-align: middle;
 }

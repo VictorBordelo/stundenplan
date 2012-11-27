@@ -30,6 +30,15 @@ app.run(function($rootScope) {
 		 {id:5, text:'17:00 - 18:30'},
 		 {id:6, text:'18:45 - 20:15'},
 		];
+
+	$rootScope.allClearValue = "";
+	$rootScope.allSetValue = "";
+	$.each($rootScope.slots, function(index, slot) {
+		$.each($rootScope.days, function(index, day) {
+			$rootScope.allClearValue += "1";
+			$rootScope.allSetValue += "0";
+		});
+	});
 	
 	$rootScope.index = function(day, slot)
     {
@@ -51,7 +60,12 @@ app.run(function($rootScope) {
 	
 	$rootScope.isClear = function(item)
     {
-		return item.availability.indexOf("0") == -1;
+		return item.availability == $rootScope.allClearValue;
+    }
+	
+	$rootScope.isSet = function(item)
+    {
+		return item.availability == $rootScope.allSetValue;
     }
 	
 	$rootScope.clear = function(item)
@@ -59,11 +73,11 @@ app.run(function($rootScope) {
 		if(!$rootScope.isClear(item))
 		{
 			ensureBackupConsistency(item, function(){
-				item.availability = item.availability.replace(/0/g,"1");
+				item.availability = $rootScope.allClearValue;
 			});
 		}
     }
-	
+
 	$rootScope.toggle = function(item, day, slot)
     {
 		if(!slot)
@@ -84,5 +98,60 @@ app.run(function($rootScope) {
 		});
     }
 
+	$rootScope.mouseStart = null;
+	$rootScope.mouseEnd = null;
+	$rootScope.mousedown = function(item, day, slot)
+    {
+		$rootScope.mouseStart = {d: day.id, s: slot.id};
+		$rootScope.mouseEnd = {d: day.id, s: slot.id};
+		$rootScope.mouseMode = $rootScope.getAvailability(item, day, slot) == "0" ? "1" : "0";
+		
+		return false;
+    }
+
+	$rootScope.mouseenter = function(item, day, slot)
+    {
+		$rootScope.mouseEnd = {d: day.id, s: slot.id};
+    }
+
+	$rootScope.mouseup = function(item, day, slot)
+    {
+		var start = $rootScope.mouseStart;
+		var end = {d: day.id, s: slot.id};
+
+		var start = {d: Math.min($rootScope.mouseStart['d'], $rootScope.mouseEnd['d']),
+				     s: Math.min($rootScope.mouseStart['s'], $rootScope.mouseEnd['s'])};
+		var end =   {d: Math.max($rootScope.mouseStart['d'], $rootScope.mouseEnd['d']),
+			         s: Math.max($rootScope.mouseStart['s'], $rootScope.mouseEnd['s'])};
+
+		$.each($rootScope.slots, function(index, slot) {
+			$.each($rootScope.days, function(index, day) {
+				if($rootScope.isMouseRect(day, slot))
+					if($rootScope.getAvailability(item, day, slot) != $rootScope.mouseMode)
+						$rootScope.toggle(item, day, slot);
+			});
+		});
+
+		$rootScope.mouseStart = null;
+		return false;
+    }
+	
+	$rootScope.isMouseRect = function(day, slot)
+    {
+		if($rootScope.mouseStart != null)
+		{
+			var start = {d: Math.min($rootScope.mouseStart['d'], $rootScope.mouseEnd['d']),
+					     s: Math.min($rootScope.mouseStart['s'], $rootScope.mouseEnd['s'])};
+			var end =   {d: Math.max($rootScope.mouseStart['d'], $rootScope.mouseEnd['d']),
+				         s: Math.max($rootScope.mouseStart['s'], $rootScope.mouseEnd['s'])};
+
+			var res = (start['d'] <= day.id && start['s'] <= slot.id) &&
+					  (end['d']   >= day.id && end['s']   >= slot.id);
+			
+			return res;
+		}
+		else return false;
+    }
+	
 	$rootScope.active = 0;
 });
