@@ -1,0 +1,14 @@
+<div ng-hide="!selected[$root.active]">
+	<h1 ng-hide="$root.active != 0">{{selected[active].name}} {{selected[active].vorname}}</h1>
+	<h1 ng-hide="$root.active != 1">{{selected[active].program}}{{selected[active].semester}} {{selected[active].groupCode}}</h1>
+	<h1 ng-hide="$root.active != 2">{{selected[active].name}}</h1>
+	<table class="timetable">
+		<thead>
+			<th><a ng-click="toggle(selected[$root.active])">Uhrzeit</a></th><th ng-repeat="day in days"><a ng-click="toggle(selected[$root.active], day)">{{day.text}}</a></th>
+		</thead>
+		<tr ng-repeat="slot in slots">
+			<td><a ng-click="toggle(selected[$root.active], null, slot)" >{{slot.text}}</a></td>
+			<td ng-repeat="day in days" ng-click="toggle(selected[$root.active], day, slot)" class="mark{{selected[$root.active].availability[index(day, slot)]}} cell" id="d{{day.id}}s{{slot.id}}"></td>
+		</tr>
+	</table>
+</div>

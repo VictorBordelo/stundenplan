@@ -8,7 +8,7 @@
 	background-color: #EEEEEE;
 }
 
-	.sidebar #radio {
+	.sidebar .typeselection {
 		margin: 10px 7px 2px 7px;
 	}
 
@@ -38,25 +38,59 @@
 	.sidebar .list ul li {
 		padding-left: 5px;
 	}
+	
+	.sidebar .list ul li .clearindicator {
+		width: 15px;
+		height: 15px;
+		display: inline-block;
+		margin: 0px 5px -3px 0;
+		border: dotted #000000 1px;
+	}
+	
+	.sidebar .list ul li .clear {
+		background-color: #AAAAAA;
+	}
 
 	.sidebar .list .selected {
 		background-color: #DDD;
 		color: black;
 	}
 
+	.sidebar input {
+		display: block;
+	}
+
 .toolbar {
 	position:fixed;
-	left: 250px;
-	height: 50px;
+	left: 251px;
+	height: 100px;
 	top: 0px;
 	right: 0px;
-	border-bottom: #AAAAAA dotted 1px;
 }
 
-.toolbar .buttonset {
-	margin-top: 10px;
-	margin-left: 20px;
+	.toolbar .buttonset .global {
+		height: 33px;
+		padding: 5px;
+		border-bottom: #AAAAAA solid 1px;
+		background-color: #EEEEEE;
+	}
+	
+	.toolbar .buttonset .element {
+		height: 33px;
+		padding: 5px;
+		border-bottom: #AAAAAA dotted 1px;
+		background-color: #FFFFFF;
+	}
+
+.content {
+	margin-top: 65px;	
+	margin-left: 280px;	
 }
+
+	.content h1 {
+		margin-bottom: 20px;
+		font-size: 18px;
+	}
 
 .save-dialog {
 	width: 500px;
@@ -113,14 +147,6 @@ body {
 	background-color: #AAAAAA;
 }
 
-.content {
-	margin-top: 50px;	
-	margin-left: 280px;	
-}
-
-.sidebar input {
-	display: block;
-}
 
 .cell {
 	width: 100px;

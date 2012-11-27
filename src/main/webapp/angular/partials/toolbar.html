@@ -1,0 +1,24 @@
+<div class="buttonset">
+	<div class="global">
+		<button ng-click="save()" ui-jq="button" ui-options="{icons: { primary: 'ui-icon-disk'}}">
+			Speichern ...
+		</button>
+		<button ng-click="clearAll()" ui-jq="button" ui-options="{icons: { primary: 'ui-icon-trash'}}">
+			Alle löschen
+		</button>
+		<button ng-click="undoAll()" ui-jq="button" ui-options="{icons: { primary: 'ui-icon-arrowreturnthick-1-w'}}">
+			Alle Änderungen verwerfen
+		</button>
+	</div>
+	<div class="element" ng-hide="!selected[active]" >
+		<button ng-click="clear(selected[active])" ng-hide="isClear(selected[active])" ui-jq="button" ui-options="{icons: { primary: 'ui-icon-trash'}}">
+			Löschen
+		</button>
+		<button ng-click="undo(selected[active])" ng-hide="!selected[active].backup" ui-jq="button" ui-options="{icons: { primary: 'ui-icon-arrowreturnthick-1-w'}}">
+			Änderungen verwerfen
+		</button>
+		<a role="button" ng-click="unselect(active)" class="ui-dialog-titlebar-close ui-corner-all" style="float: right; margin-top: 10px;" href="#">
+			<span class="ui-icon ui-icon-closethick">close</span>
+		</a>
+	</div>
+</div>

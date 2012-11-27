@@ -1,0 +1,39 @@
+<img src="img/logo.png"/>
+
+<div class="typeselection" ui-jq="buttonset">
+	<input type="radio" id="radio1" value=0 name="radio" ng-model="$root.active" checked />
+	<label for="radio1">Dozent</label>
+	<input type="radio" id="radio2" value=1 name="radio" ng-model="$root.active" />
+	<label for="radio2">Gruppe</label>
+	<input type="radio" id="radio3" value=2 name="radio" ng-model="$root.active" />
+	<label for="radio3">Raum</label>
+</div>
+
+<div class="filterbox">
+	<b>Filter:</b>
+	<input ng-model="query">
+</div>
+
+<div class="list" ng-switch on="$root.active">
+	<div ng-switch-when="0">
+		<ul class="professors">
+			<li ng-class="{selected: professor.selected}" ng-repeat="professor in professors | filter:query" class="professor">
+				<a ng-click="selectProfessor(professor)"><div ng-class="{clear: isClear(professor) == true}" class="clearindicator"></div><i ng-hide="!professor.backup">* </i>{{professor.name}} {{professor.vorname}}</a>
+			</li>
+		</ul>
+	</div>
+	<div ng-switch-when="1">
+		<ul class="groups">
+			<li ng-class="{selected: group.selected}" ng-repeat="group in groups | filter:query" class="group">
+				<a ng-click="selectGroup(group)"><div ng-class="{clear: isClear(group) == true}" class="clearindicator"></div><i ng-hide="!group.backup">* </i>{{group.program}}{{group.semester}} {{group.groupCode}}</a>
+			</li>
+		</ul>
+	</div>
+	<div ng-switch-when="2">
+		<ul class="rooms">
+			<li ng-class="{selected: room.selected}" ng-repeat="room in rooms | filter:query" class="room">
+				<a ng-click="selectRoom(room)"><div ng-class="{clear: isClear(room) == true}" class="clearindicator"></div><i ng-hide="!room.backup">* </i>{{room.name}} [{{room.size}}]</a>
+			</li>
+		</ul>
+	</div>
+</div>

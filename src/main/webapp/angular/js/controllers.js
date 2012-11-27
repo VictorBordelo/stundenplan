@@ -1,5 +1,9 @@
 'use strict';
 
+var PROFESSOR = 0;
+var GROUP = 1;
+var ROOM = 2;
+
 /* Controllers */
 function select($scope, type, val) {
 	if($scope.selected[type]) $scope.selected[type].selected = false;
@@ -14,6 +18,26 @@ function DataController($scope, Professor, Group, Room) {
 	$scope.rooms = Room.query();
 	$scope.selected = {};
 
+	$scope.unselect = function(type)
+    {
+		if($scope.selected[type]) $scope.selected[type].selected = false;
+		$scope.selected[type] = null;
+    }
+	
+	$scope.clearAll = function()
+    {
+		$.each($scope.professors, function(index, item) {$scope.$root.clear(item);});
+		$.each($scope.groups, function(index, item) {$scope.$root.clear(item);});
+		$.each($scope.rooms, function(index, item) {$scope.$root.clear(item);});
+    }
+	
+	$scope.undoAll = function()
+    {
+		$.each($scope.professors, function(index, item) {$scope.$root.undo(item);});
+		$.each($scope.groups, function(index, item) {$scope.$root.undo(item);});
+		$.each($scope.rooms, function(index, item) {$scope.$root.undo(item);});
+    }
+	
     $scope.selectProfessor = function(val)
     {
     	select($scope, 0, val);

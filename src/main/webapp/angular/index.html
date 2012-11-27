@@ -24,93 +24,38 @@
 
 	</head>
 	<body ng-controller="DataController">
-		<div class="sidebar">
-			<img src="img/logo.png"/>
-			<div id="radio" ui-jq="buttonset">
-				<input type="radio" id="radio1" value=0 name="radio" ng-model="active"  checked="checked"/>
-				<label for="radio1">Dozent</label>
-				<input type="radio" id="radio2" value=1 name="radio" ng-model="active" />
-				<label for="radio2">Gruppe</label>
-				<input type="radio" id="radio3" value=2 name="radio" ng-model="active" />
-				<label for="radio3">Raum</label>
-			</div>
-			<div class="filterbox">
-				<b>Filter:</b>
-				<input ng-model="query">
-			</div>
-			<div class="list" ng-switch on="active">
-				<div ng-switch-default>
-					<ul class="professors">
-						<li ng-class="{selected: professor.selected}" ng-repeat="professor in professors | filter:query" class="professor">
-							<a ng-click="selectProfessor(professor)"><i ng-hide="!professor.backup">* </i>{{professor.name}} {{professor.vorname}}</a>
-						</li>
-					</ul>
-				</div>
-				<div ng-switch-when="1">
-					<ul class="groups">
-						<li ng-class="{selected: group.selected}" ng-repeat="group in groups | filter:query" class="group">
-							<a ng-click="selectGroup(group)"><i ng-hide="!group.backup">* </i>{{group.program}}{{group.semester}} {{group.groupCode}}</a>
-						</li>
-					</ul>
-				</div>
-				<div ng-switch-when="2">
-					<ul class="rooms">
-						<li ng-class="{selected: room.selected}" ng-repeat="room in rooms | filter:query" class="room">
-							<a ng-click="selectRoom(room)"><i ng-hide="!room.backup">* </i>{{room.name}} [{{room.size}}]</a>
-						</li>
-					</ul>
-				</div>
-			</div>
-		</div>
-		<div class="content">
-			<div class="toolbar">
-				<div class="buttonset">
-					<button ng-click="save()" ui-jq="button" ui-options="{icons: { primary: 'ui-icon-disk'}}">
-						Speichern ...
-					</button>
-					<button ng-click="undo(selected[active])" ng-hide="!selected[active].backup" ui-jq="button" ui-options="{icons: { primary: 'ui-icon-trash'}}">
-						Änderungen verwerfen
-					</button>
-				</div>
-			</div>
-			<div ng-hide="!selected[active]">
-				<h1 ng-hide="active != 0">{{selected[active].name}} {{selected[active].vorname}}</h1>
-				<h1 ng-hide="active != 1">{{selected[active].program}}{{selected[active].semester}} {{selected[active].groupCode}}</h1>
-				<h1 ng-hide="active != 2">{{selected[active].name}}</h1>
-				<table class="timetable">
-					<thead>
-						<th><a ng-click="toggle(selected[active])">Uhrzeit</a></th><th ng-repeat="day in days"><a ng-click="toggle(selected[active], day)">{{day.text}}</a></th>
-					</thead>
-					<tr ng-repeat="slot in slots">
-						<td><a ng-click="toggle(selected[active], null, slot)" >{{slot.text}}</a></td>
-						<td ng-repeat="day in days" ng-click="toggle(selected[active], day, slot)" class="mark{{selected[active].availability[index(day, slot)]}} cell" id="d{{day.id}}s{{slot.id}}"></td>
-					</tr>
-				</table>
-			</div>
+		<div class="sidebar" ng-include="'partials/sidebar.html'"></div>
+		<div class="toolbar" ng-include="'partials/toolbar.html'"></div>
 
-			<div ui-modal class="save-dialog fade ui-dialog" ng-model="modalShown">
+		<div class="content">
+			<div ng-include="'partials/table.html'"></div>
+			
+			<div ui-modal class="save-dialog ui-dialog" ng-model="modalShown">
 				<div class="ui-dialog-titlebar ui-widget-header ui-corner-all ui-helper-clearfix">
-					<span class="ui-dialog-title" id="ui-id-8">Geänderte Datensätze</span><a role="button" ng-click="modalShown=false" class="ui-dialog-titlebar-close ui-corner-all" href="#"><span class="ui-icon ui-icon-closethick">close</span></a>
+					<span class="ui-dialog-title" id="ui-id-8">Geänderte Datensätze</span>
+					<a role="button" ng-click="modalShown=false" class="ui-dialog-titlebar-close ui-corner-all" href="#">
+						<span class="ui-icon ui-icon-closethick">close</span>
+					</a>
 				</div>
 				<div class="ui-dialog-content ui-widget-content list">
 					<b>Dozenten</b>
 					<table class="changetable">
 						<tr ng-repeat="professor in changed['professors']" ng-hide="!professor.backup">
-							<td><a ng-click="undo(professor)" class="ui-icon ui-icon-trash"></a></td>
+							<td><a ng-click="undo(professor)" class="ui-icon ui-icon-arrowreturnthick-1-w"></a></td>
 							<td>{{professor.name}} {{professor.vorname}}</td>
 						</tr>
 					</table>
 					<b>Gruppen</b>
 					<table class="changetable">
 						<tr ng-repeat="group in changed['groups']" ng-hide="!group.backup">
-							<td><a ng-click="undo(group)" class="ui-icon ui-icon-trash"></a></td>
+							<td><a ng-click="undo(group)" class="ui-icon ui-icon-arrowreturnthick-1-w"></a></td>
 							<td>{{group.program}}{{group.semester}} {{group.groupCode}}</td>
 						</tr>
 					</table>
 					<b>Räume</b>
 					<table class="changetable">
 						<tr ng-repeat="room in changed['rooms']" ng-hide="!room.backup">
-							<td><a ng-click="undo(room)" class="ui-icon ui-icon-trash"></a></td>
+							<td><a ng-click="undo(room)" class="ui-icon ui-icon-arrowreturnthick-1-w"></a></td>
 							<td>{{room.name}}</td>
 						</tr>
 					</table>
