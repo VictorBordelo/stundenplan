@@ -18,7 +18,7 @@
 	<div ng-switch-when="0">
 		<ul class="professors">
 			<li ng-class="{selected: professor.selected}" ng-repeat="professor in professors | filter:query" class="professor">
-				<a ng-click="selectProfessor(professor)" title="{{professor.availability}}" ui-jq="tooltip" ui-options="{items: '[title]', content: ttcontent, position: { my: 'left+20 center', at: 'right center' }}">
+				<a id="{{professor.name}}_{{professor.vorname}}" ng-click="selectProfessor(professor)" title="{{professor.availability}}" ui-jq="tooltip" ui-options="{items: '[title]', content: ttcontent, position: { my: 'left+20 center', at: 'right center' }}">
 					<div ng-class="{clear: isClear(professor) == true, set: isSet(professor) == true}" class="clearindicator"></div><i ng-hide="!professor.backup">* </i>{{professor.name}} {{professor.vorname}}
 				</a>
 			</li>

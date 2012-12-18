@@ -1,22 +1,22 @@
 <div class="buttonset">
 	<div class="global">
-		<button ng-click="save()" ui-jq="button" ui-options="{icons: { primary: 'ui-icon-disk'}}">
+		<button id="save_global" ng-click="save()" ui-jq="button" ui-options="{icons: { primary: 'ui-icon-disk'}}">
 			Speichern ...
 		</button>
-		<button ng-click="clearAll()" ui-jq="button" ui-options="{icons: { primary: 'ui-icon-trash'}}">
+		<button id="clear_global" ng-click="clearAll()" ui-jq="button" ui-options="{icons: { primary: 'ui-icon-trash'}}">
 			Alle löschen
 		</button>
-		<button ng-click="undoAll()" ui-jq="button" ui-options="{icons: { primary: 'ui-icon-arrowreturnthick-1-w'}}">
+		<button id="undo_global" ng-click="undoAll()" ui-jq="button" ui-options="{icons: { primary: 'ui-icon-arrowreturnthick-1-w'}}">
 			Alle Änderungen verwerfen
 		</button>
 		<label style="float: right" for="alternativeColors">Alternative Farben</label>
 		<input ui-jq="button" style="float: right" id="alternativeColors" type="checkbox" ng-model="$root.alternativeColors"/>
 	</div>
 	<div class="element" ng-hide="!selected[active]" >
-		<button ng-click="clear(selected[active])" ng-hide="isClear(selected[active])" ui-jq="button" ui-options="{icons: { primary: 'ui-icon-trash'}}">
+		<button id="clear_selected" ng-click="clear(selected[active])" ng-hide="isClear(selected[active])" ui-jq="button" ui-options="{icons: { primary: 'ui-icon-trash'}}">
 			Löschen
 		</button>
-		<button ng-click="undo(selected[active])" ng-hide="!selected[active].backup" ui-jq="button" ui-options="{icons: { primary: 'ui-icon-arrowreturnthick-1-w'}}">
+		<button id="undo_selected" ng-click="undo(selected[active])" ng-hide="!selected[active].backup" ui-jq="button" ui-options="{icons: { primary: 'ui-icon-arrowreturnthick-1-w'}}">
 			Änderungen verwerfen
 		</button>
 	</div>
