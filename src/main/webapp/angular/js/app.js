@@ -1,6 +1,6 @@
 'use strict';
 
-var app = angular.module('stundenplan', ['ui', 'professorsServices','roomServices', 'groupServices']);
+var app = angular.module('stundenplan', ['ui', 'professorsServices', 'roomServices', 'groupServices']);
 
 /* Controllers */
 function ensureBackupConsistency(item, f) {
@@ -39,16 +39,37 @@ app.run(function($rootScope) {
 			$rootScope.allSetValue += "0";
 		});
 	});
-	
+    
 	$rootScope.index = function(day, slot)
     {
 		return day.id * $rootScope.slots.length + slot.id;
-    }
+    };
 	
-	$rootScope.getAvailability = function(item, day, slot)
+	$rootScope.getAvailability = function(item, day, slot, invert = false)
     {
 		var index = $rootScope.index(day, slot);
-		return item.availability[index];
+		return invert ? (item.availability[index] == "0" ? "1" : "0") : item.availability[index];
+    };
+	
+	$rootScope.ttcontent = function()
+    {
+		var element = $( this );
+	    if ( element.is( "[title]" ) ) {
+	    	var a = element.attr( "title" );
+	    	
+	    	var res = "<table class='tttable'>";
+	    	$.each($rootScope.slots, function(index, slot) {
+	    		res += "<tr>";
+	        	$.each($rootScope.days, function(index, day) {
+	        		index = $rootScope.index(day, slot);
+	        		res += "<td class='ttmark"+a[index]+"'> </td>";
+	        	});
+	    		res += "</tr>";
+	    	});
+			res += "</table>";
+			
+	    	return res;
+	    }
     }
 
 	$rootScope.undo = function(item)
@@ -56,17 +77,17 @@ app.run(function($rootScope) {
 		ensureBackupConsistency(item, function(){
 			item.availability = item.backup;
 		});
-    }
+    };
 	
 	$rootScope.isClear = function(item)
     {
-		return item.availability == $rootScope.allClearValue;
-    }
+		return item != null ? item.availability == $rootScope.allClearValue : false;
+    };
 	
 	$rootScope.isSet = function(item)
     {
 		return item.availability == $rootScope.allSetValue;
-    }
+    };
 	
 	$rootScope.clear = function(item)
     {
@@ -76,82 +97,77 @@ app.run(function($rootScope) {
 				item.availability = $rootScope.allClearValue;
 			});
 		}
-    }
+    };
 
-	$rootScope.toggle = function(item, day, slot)
+    
+    var editing = false;
+	$rootScope.toggle = function(item, day, slot, inside = false)
     {
-		if(!slot)
+    	if(!slot)
 		{
-	    	$.each($rootScope.slots, function(index, slot) {$rootScope.toggle(item, day, slot);});
+    		if(editing && !inside) return;
+    		editing = true;
+	    	$.each($rootScope.slots, function(index, slot) {$rootScope.toggle(item, day, slot, true);});
+    		if(!inside) editing = false;
 	    	return;
 		}
 		if(!day)
 		{
-	    	$.each($rootScope.days, function(index, day) {$rootScope.toggle(item, day, slot);});
+    		if(editing && !inside) return;
+    		editing = true;
+	    	$.each($rootScope.days, function(index, day) {$rootScope.toggle(item, day, slot, true);});
+    		if(!inside) editing = false;
 	    	return;
 		}
 
-		ensureBackupConsistency(item, function() {
+    	var f = function() {
 			var index = $rootScope.index(day, slot);
-			var value = $rootScope.getAvailability(item, day, slot) == "0" ? "1" : "0";
+			var value = $rootScope.getAvailability(item, day, slot, true);
 			item.availability = item.availability.substr(0, index) + value + item.availability.substr(index+1);
-		});
-    }
+		};
+		ensureBackupConsistency(item, f);
+    };
 
+	// Selection by mouse drag
 	$rootScope.mouseStart = null;
-	$rootScope.mouseEnd = null;
-	$rootScope.mousedown = function(item, day, slot)
-    {
-		$rootScope.mouseStart = {d: day.id, s: slot.id};
-		$rootScope.mouseEnd = {d: day.id, s: slot.id};
-		$rootScope.mouseMode = $rootScope.getAvailability(item, day, slot) == "0" ? "1" : "0";
-		
-		return false;
-    }
-
-	$rootScope.mouseenter = function(item, day, slot)
-    {
-		$rootScope.mouseEnd = {d: day.id, s: slot.id};
-    }
-
-	$rootScope.mouseup = function(item, day, slot)
-    {
-		var start = $rootScope.mouseStart;
-		var end = {d: day.id, s: slot.id};
-
-		var start = {d: Math.min($rootScope.mouseStart['d'], $rootScope.mouseEnd['d']),
-				     s: Math.min($rootScope.mouseStart['s'], $rootScope.mouseEnd['s'])};
-		var end =   {d: Math.max($rootScope.mouseStart['d'], $rootScope.mouseEnd['d']),
-			         s: Math.max($rootScope.mouseStart['s'], $rootScope.mouseEnd['s'])};
-
-		$.each($rootScope.slots, function(index, slot) {
-			$.each($rootScope.days, function(index, day) {
-				if($rootScope.isMouseRect(day, slot))
-					if($rootScope.getAvailability(item, day, slot) != $rootScope.mouseMode)
-						$rootScope.toggle(item, day, slot);
-			});
-		});
-
-		$rootScope.mouseStart = null;
-		return false;
-    }
+	$rootScope.mouseEnd   = null;
+	$rootScope.mouseNormalizedStart = function(){ return {d: Math.min($rootScope.mouseStart['d'], $rootScope.mouseEnd['d']), s: Math.min($rootScope.mouseStart['s'], $rootScope.mouseEnd['s'])};}
+	$rootScope.mouseNormalizedEnd   = function(){ return {d: Math.max($rootScope.mouseStart['d'], $rootScope.mouseEnd['d']), s: Math.max($rootScope.mouseStart['s'], $rootScope.mouseEnd['s'])};}
+	$rootScope.mouseMode  = "0";
 	
-	$rootScope.isMouseRect = function(day, slot)
-    {
-		if($rootScope.mouseStart != null)
-		{
-			var start = {d: Math.min($rootScope.mouseStart['d'], $rootScope.mouseEnd['d']),
-					     s: Math.min($rootScope.mouseStart['s'], $rootScope.mouseEnd['s'])};
-			var end =   {d: Math.max($rootScope.mouseStart['d'], $rootScope.mouseEnd['d']),
-				         s: Math.max($rootScope.mouseStart['s'], $rootScope.mouseEnd['s'])};
+	$rootScope.mouseDown = function(item, day, slot) {
+		$rootScope.mouseStart = {d: day.id, s: slot.id};
+		$rootScope.mouseEnd   = $rootScope.mouseStart;
+		$rootScope.mouseMode  = $rootScope.getAvailability(item, day, slot, true);
+    };
 
-			var res = (start['d'] <= day.id && start['s'] <= slot.id) &&
-					  (end['d']   >= day.id && end['s']   >= slot.id);
+	$rootScope.mouseEnter = function(item, day, slot) {
+		$rootScope.mouseEnd   = {d: day.id, s: slot.id};
+    };
+
+	$rootScope.mouseUp = function(item, day, slot) {
+		if($rootScope.mouseStart != null) {
+			var start = $rootScope.mouseNormalizedStart();
+			var end   = $rootScope.mouseNormalizedEnd();
+	
+			for(var d = start['d']; d <= end['d']; d++)
+				for(var s = start['s']; s <= end['s']; s++)
+					if($rootScope.getAvailability(item, $rootScope.days[d], $rootScope.slots[s]) != $rootScope.mouseMode)
+						$rootScope.toggle(item, $rootScope.days[d], $rootScope.slots[s]);
+	
+			$rootScope.mouseStart = null;
+		}
+    };
+	
+	$rootScope.isMouseRect = function(day, slot) {
+		if($rootScope.mouseStart != null) {
+			var start = $rootScope.mouseNormalizedStart();
+			var end   = $rootScope.mouseNormalizedEnd();
 			
-			return res;
+			return (start['d'] <= day.id && start['s'] <= slot.id) && (end['d'] >= day.id && end['s'] >= slot.id);
 		}
 		else return false;
-    }
+    };
 	
 	$rootScope.active = 0;
 });

@@ -1,18 +1,34 @@
-<div ng-hide="!selected[$root.active]">
-	<h1 ng-hide="$root.active != 0">{{selected[active].name}} {{selected[active].vorname}}</h1>
-	<h1 ng-hide="$root.active != 1">{{selected[active].program}}{{selected[active].semester}} {{selected[active].groupCode}}</h1>
-	<h1 ng-hide="$root.active != 2">{{selected[active].name}}</h1>
-	<table class="timetable" ng-mouseleave="$root.mouseStart = null">
+<div class="ui-dialog ui-widget ui-widget-content ui-corner-all ui-dialog-buttons" style="width:auto" ng-hide="!selected[$root.active]">
+	<div ng-hide="$root.active != 0" class="ui-dialog-titlebar ui-widget-header ui-corner-all ui-helper-clearfix">
+		<span class="ui-dialog-title">{{selected[active].name}} {{selected[active].vorname}}</span>
+		<a ng-click="unselect(active)" role="button" class="ui-dialog-titlebar-close ui-corner-all" href="#">
+			<span class="ui-icon ui-icon-closethick">close</span>
+		</a>
+	</div>
+	<div ng-hide="$root.active != 1" class="ui-dialog-titlebar ui-widget-header ui-corner-all ui-helper-clearfix">
+		<span class="ui-dialog-title">{{selected[active].program}}{{selected[active].semester}} {{selected[active].groupCode}}</span>
+		<a ng-click="unselect(active)" role="button" class="ui-dialog-titlebar-close ui-corner-all" href="#">
+			<span class="ui-icon ui-icon-closethick">close</span>
+		</a>
+	</div>
+	<div ng-hide="$root.active != 2" class="ui-dialog-titlebar ui-widget-header ui-corner-all ui-helper-clearfix">
+		<span class="ui-dialog-title">{{selected[active].name}}</span>
+		<a ng-click="unselect(active)" role="button" class="ui-dialog-titlebar-close ui-corner-all" href="#">
+			<span class="ui-icon ui-icon-closethick">close</span>
+		</a>
+	</div>
+	<table class="timetable" ng-mouseleave="$root.mouseStart = null" ng-mousedown="$event.preventDefault()">
 		<thead>
-			<th><a ng-click="toggle(selected[$root.active])">Uhrzeit</a></th><th ng-repeat="day in days"><a ng-click="toggle(selected[$root.active], day)">{{day.text}}</a></th>
+			<th><a ng-click="toggle(selected[$root.active])">Uhrzeit</a></th>
+			<th ng-repeat="day in days"><a ng-click="toggle(selected[$root.active], day)">{{day.text}}</a></th>
 		</thead>
 		<tr ng-repeat="slot in slots">
-			<td><a ng-click="toggle(selected[$root.active], null, slot)" >{{slot.text}}</a></td>
+			<td><a ng-click="toggle(selected[$root.active], null, slot)">{{slot.text}}</a></td>
 			<td ng-repeat="day in days"
 				
-				ng-mousedown="mousedown(selected[$root.active], day, slot); $event.preventDefault()"
-				ng-mouseup="mouseup(selected[$root.active], day, slot)"
-				ng-mouseover="mouseenter(selected[$root.active], day, slot)"
+				ng-mousedown="mouseDown(selected[$root.active], day, slot); $event.preventDefault()"
+				ng-mouseup="mouseUp(selected[$root.active], day, slot)"
+				ng-mouseover="mouseEnter(selected[$root.active], day, slot)"
 				ng-class="{rect: isMouseRect(day, slot) == true}"
 				
 				class="mode{{$root.mouseMode}} mark{{selected[$root.active].availability[index(day, slot)]}} cell"
