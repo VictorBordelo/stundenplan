@@ -53,17 +53,17 @@ function DataController($scope, Professor, Group, Room) {
 
 	$scope.selectProfessor = function(val, $event) {
 		$('.ui-tooltip').hide();
-		select($scope, 0, val);
+		select($scope, PROFESSOR, val);
 	}
 
 	$scope.selectGroup = function(val) {
 		$('.ui-tooltip').hide();
-		select($scope, 1, val);
+		select($scope, GROUP, val);
 	}
 
 	$scope.selectRoom = function(val) {
 		$('.ui-tooltip').hide();
-		select($scope, 2, val);
+		select($scope, ROOM, val);
 	}
 
 	$scope.save = function(val) {
